@@ -3,21 +3,22 @@
 
 .hero-bg {
   width: 100vw;
-  height: 60.8rem;
-  overflow: visible;
+  height: 72.8rem;
+  overflow-y: hidden;
   position: absolute;
   .header-bg {
     width: 100vw;
-    height: 80.8rem;
-    margin-top: -9.8rem;
+    height:auto;
+    margin-top:-18rem;
     padding-bottom: 10rem;
     padding-top: 2rem;
+   
   }
 }
 
 .hero {
   width: 100vw;
-  height: 72.8vh;
+  height: 728px;
   position: relative;
   padding: 0px;
   background: linear-gradient(
@@ -84,6 +85,7 @@
           margin-top: -1rem;
           i{
             color: $white;
+            font-size: 1.6rem;
           }
         }
       }
@@ -187,5 +189,52 @@
             }
         }
     }
+}
+.content{
+  text-align: center;
+  margin-top: 15.2rem;
+ h1{
+  color: $white;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 7.2rem;
+  letter-spacing: -.12rem;
+ }
+ p{
+  color: $text;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: Inter, sans-serif;
+  width: 76.8rem;
+  margin-inline: auto;
+  margin-top: 2.4rem;
+ }
+ .btn{
+  border-radius: 0.8rem;
+  border: .1rem solid #FFE500;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 1.6rem 2.8rem;
+  width: 21rem;
+  height: 6rem;
+  gap: .8rem;
+  margin-top: 4.8rem;
+
+  .action{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    font-family:Inter, sans-serif; 
+    color: $white;
+  }
+  i{
+    color: $white;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+ }
 }
 

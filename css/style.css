@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  font-style: normal;
 }
 
 body {
@@ -61,21 +62,21 @@ p {
 }
 .hero-bg {
   width: 100vw;
-  height: 60.8rem;
-  overflow: visible;
+  height: 72.8rem;
+  overflow-y: hidden;
   position: absolute;
 }
 .hero-bg .header-bg {
   width: 100vw;
-  height: 80.8rem;
-  margin-top: -9.8rem;
+  height: auto;
+  margin-top: -18rem;
   padding-bottom: 10rem;
   padding-top: 2rem;
 }
 
 .hero {
   width: 100vw;
-  height: 72.8vh;
+  height: 728px;
   position: relative;
   padding: 0px;
   background: linear-gradient(180deg, rgba(0, 41, 83, 0.8) 0%, rgba(0, 45, 91, 0.8) 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
@@ -138,6 +139,7 @@ p {
 }
 .hero .head-box .navbar .navbar-resource .dropdown i {
   color: #FFF;
+  font-size: 1.6rem;
 }
 .hero .head-box .navbar .search {
   width: 2rem;
@@ -234,4 +236,51 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 2rem;
+}
+
+.content {
+  text-align: center;
+  margin-top: 15.2rem;
+}
+.content h1 {
+  color: #FFF;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 7.2rem;
+  letter-spacing: -0.12rem;
+}
+.content p {
+  color: #E3E3E3;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: Inter, sans-serif;
+  width: 76.8rem;
+  margin-inline: auto;
+  margin-top: 2.4rem;
+}
+.content .btn {
+  border-radius: 0.8rem;
+  border: 0.1rem solid #FFE500;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 1.6rem 2.8rem;
+  width: 21rem;
+  height: 6rem;
+  gap: 0.8rem;
+  margin-top: 4.8rem;
+}
+.content .btn .action {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  font-family: Inter, sans-serif;
+  color: #FFF;
+}
+.content .btn i {
+  color: #FFF;
+  width: 2.4rem;
+  height: 2.4rem;
 }/*# sourceMappingURL=style.css.map */
