@@ -17,46 +17,73 @@
             <div class="head-box">
                 <div class="container">
                     <nav class="navbar">
-                        <img src="./Image/main-logo.png" alt="top-logo" class="logo">
-                        <ul class="navbar-list">
-                            <li class="navbar-link">
-                                <a href="index.html" target="_top">Home</a>
-                            </li>
-                            <li class="navbar-link">
-                                <a href="#">About Us</a>
-                            </li>
-                            <li class="navbar-link">
-                                <a href="#">Case Studies</a>
-                            </li>
-                            <li class="navbar-link-resources">
-                                <a href="#">Resources  <samp class="dropdown" id="dropdown-arrow"><i class="fa-solid fa-chevron-down"></i></samp></a>
-                            </li>
-                        </ul>
+                        <a href="index.html">
+                            <img src="./Image/main-logo.png" alt="top-logo" class="logo">
+                        </a>
+                        <div class="navbar-box">
+                            <div class="navbar-menu" id="navbar-menu">
+                                <ul class="navbar-list">
+                                    <li class="navbar-link">
+                                        <a href="index.html" target="_self">Home</a>
+                                    </li>
+                                    <li class="navbar-link">
+                                        <a href="#" target="_blank">About Us</a>
+                                    </li>
+                                    <li class="navbar-link">
+                                        <a href="#" target="_blank">Case Studies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar-resource">
+                            <a href="#" target="_blank">
+                                Resources
+                            </a>
+                            <Button onclick="dropdown()" class="dropdown" id="dropdown-arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
                         <button onclick="toggleInput()" class="search" id="search">
                             <i class="fa-solid fa-magnifying-glass" id="search"></i>
                         </button>
                     </nav>
                 </div>
             </div>
-            <div class="search-box" id="search-box">             
-            <div class="search-input" id="search-input">
-             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" name="search" placeholder="search">
-            <div class="close-btn" id="closed-btn">
-                <i class="fa-solid fa-xmark"></i>
+            <div class="search-box" id="search-box">
+                <div class="search-input" id="search-input">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" name="search" placeholder="search">
+                    <button onclick="toggleInput()" class="close-btn" id="closed-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
             </div>
-            </div>
-        </div>
-            <div class="drop-down-menu" id="drop-down-menu">
-                <ul class="drop-down-list">
-                    <li class="drop-down-link">
-                        <a href="#">blog</a>
-                        <a href="#">Customer Stories</a>
-                        <a href="#">Video tutorials</a>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul class="dropdown-list">
+                    <li class="dropdown-link">
+                        <img src="./Image/book.png" alt="book">
+                        <a href="#" target="_blank">
+                            <h4>Blog</h4>
+                            <p>The latest industry news, updates and info.</p>
+                        </a>
+                    </li>
+                    <li class="dropdown-link">
+                        <img src="./Image/zap (1).png" alt="">
+                        <a href="#" target="_blank">
+                            <h4>Customer stories</h4>
+                            <p>Learn how our customers are making big changes.</p>
+                        </a>
+                    </li>
+                    <li class="dropdown-link">
+                        <img src="./Image/play-circle.png" alt="">
+                        <a href="#" target="_blank">
+                            <h4>Video tutorials</h4>
+                            <p>Get up and running on new features and techniques.</p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="content">
+            <!-- <div class="content">
                 <div class="heading">
                     <h1>
                         Beautiful analytics to grow smarter
@@ -70,7 +97,7 @@
                     Why Catalog?<i class="fa-light fa-arrow-right"></i>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </header>
 
