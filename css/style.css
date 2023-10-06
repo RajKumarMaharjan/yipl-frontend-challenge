@@ -1,1 +1,165 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 15%;
+  }
+}
+.hero-bg {
+  width: 100vw;
+  height: 60.8rem;
+  overflow: visible;
+  position: absolute;
+}
+.hero-bg .header-bg {
+  width: 100vw;
+  height: 80.8rem;
+  margin-top: -9.8rem;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+}
+
+.hero {
+  width: 100vw;
+  height: 72.8vh;
+  position: relative;
+  padding: 0px;
+  background: linear-gradient(180deg, rgba(0, 41, 83, 0.8) 0%, rgba(0, 45, 91, 0.8) 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-color: transparent;
+}
+.hero .head-box {
+  border-bottom: 0.1rem solid white;
+  width: 100vw;
+  height: 8rem;
+}
+.hero .head-box .navbar {
+  display: flex;
+  gap: 4rem;
+}
+.hero .head-box .navbar .logo {
+  width: 16rem;
+  height: 4.8rem;
+  margin-top: 1.6rem;
+}
+.hero .head-box .navbar .navbar-list {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2.8rem;
+}
+.hero .head-box .navbar .navbar-list a {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-size: none;
+  font-weight: 600;
+  line-height: 2.4rem;
+  font-family: "Inter", sans-serif;
+}
+.hero .head-box .navbar .navbar-list .dropdown {
+  margin-left: 1rem;
+}
+.hero .head-box .navbar .search {
+  width: 2rem;
+  height: 2rem;
+  color: #FFF;
+  margin-top: 3rem;
+  margin-left: 53.3rem;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+}
+.hero .search-box {
+  display: none;
+}
+.hero .search-box .search-input {
+  display: flex;
+  gap: 0.8rem;
+  flex: 1 0 0;
+  position: absolute;
+  top: 13.7rem;
+  left: 40rem;
+  width: 64rem;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 126.25%), #FFF;
+  box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
+.hero .search-box .search-input input {
+  border: none;
+  font-size: 1.6rem;
+  width: 55rem;
+}
+.hero .search-box .search-input .search-icon {
+  font-size: 1.6rem;
+  color: #62696F;
+}
+.hero .search-box .search-input .close-btn {
+  display: flex;
+  border: 0.1rem solid rgba(245, 245, 245, 0.9607843137);
+  background-color: rgba(245, 245, 245, 0.9607843137);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  color: #585858;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 100;
+  padding-left: 0.1rem;
+  position: absolute;
+  top: -1.4rem;
+  right: -1.8rem;
+}/*# sourceMappingURL=style.css.map */
