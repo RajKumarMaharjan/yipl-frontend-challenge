@@ -29,9 +29,8 @@ li{
     list-style: none;
 }
 h1,
-h2,
-h3,
-h4{
+h2
+{
     font-family: 'Inter', sans-serif;
 }
 p{
@@ -40,6 +39,7 @@ p{
 
 .container{
     width: 85%;
+    height: auto;
     margin: 0 auto;
 }
 
