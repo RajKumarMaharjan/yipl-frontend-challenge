@@ -564,12 +564,13 @@ header .content .btn i {
   display: flex;
   justify-content: center;
   margin-top: 3.2rem;
+  margin-bottom: 8rem;
 }
 .news .wrapper .container .viewBtn button {
   padding: 1rem 1.6rem;
   gap: 1rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--secondary-teal, #1D6FA3);
+  border: 1px solid var(--secondary-teal, #1d6fa3);
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -577,4 +578,254 @@ header .content .btn i {
   font-style: normal;
   color: #24272E;
   background: none;
+}
+
+.Resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f9f9ff;
+  padding: 8rem;
+  align-items: center;
+}
+.Resources .wrapper {
+  text-align: center;
+}
+.Resources .wrapper .heading-content h2 {
+  color: #24272E;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+.Resources .wrapper .para-content {
+  color: #7C7D82;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 2.7rem;
+  width: 34.58vw;
+  padding-top: 3.2rem;
+  margin-inline: auto;
+}
+.Resources .wrapper .items .item-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2.6rem;
+  padding-top: 3.2rem;
+}
+.Resources .wrapper .items .item-row .card,
+.Resources .wrapper .items .item-row .card-2,
+.Resources .wrapper .items .item-row .card-3 {
+  width: 24.51vw;
+  height: 33.75rem;
+  border-radius: 2.18rem;
+  background: #fff;
+  padding: 3.62rem 3rem 1.83rem 2.9rem;
+}
+.Resources .wrapper .items .item-row .card .tool,
+.Resources .wrapper .items .item-row .card-2 .tool,
+.Resources .wrapper .items .item-row .card-3 .tool {
+  display: flex;
+  gap: 0.86rem;
+}
+.Resources .wrapper .items .item-row .card .tool .reparing-tool,
+.Resources .wrapper .items .item-row .card-2 .tool .reparing-tool,
+.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 1.8191rem;
+}
+.Resources .wrapper .items .item-row .card .tool .reparing-tool img,
+.Resources .wrapper .items .item-row .card-2 .tool .reparing-tool img,
+.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool img {
+  padding: 1.72rem 1.64rem 1.63rem 1.71rem;
+}
+.Resources .wrapper .items .item-row .card .tool .tool-text,
+.Resources .wrapper .items .item-row .card-2 .tool .tool-text,
+.Resources .wrapper .items .item-row .card-3 .tool .tool-text {
+  color: #66686d;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding-top: 2rem;
+}
+.Resources .wrapper .items .item-row .card .item-heading,
+.Resources .wrapper .items .item-row .card-2 .item-heading,
+.Resources .wrapper .items .item-row .card-3 .item-heading {
+  display: flex;
+  justify-content: start;
+  padding-top: 2.2rem;
+}
+.Resources .wrapper .items .item-row .card .item-heading h4,
+.Resources .wrapper .items .item-row .card-2 .item-heading h4,
+.Resources .wrapper .items .item-row .card-3 .item-heading h4 {
+  font-size: 2.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 3.6rem;
+  color: #24272E;
+}
+.Resources .wrapper .items .item-row .card .card-text,
+.Resources .wrapper .items .item-row .card-2 .card-text,
+.Resources .wrapper .items .item-row .card-3 .card-text {
+  padding-top: 1.24rem;
+}
+.Resources .wrapper .items .item-row .card .card-text p,
+.Resources .wrapper .items .item-row .card-2 .card-text p,
+.Resources .wrapper .items .item-row .card-3 .card-text p {
+  color: #7C7D82;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: left;
+}
+.Resources .wrapper .items .item-row .card .link,
+.Resources .wrapper .items .item-row .card-2 .link,
+.Resources .wrapper .items .item-row .card-3 .link {
+  border: none;
+  background: none;
+  padding-left: 2rem;
+  padding-top: 1.7rem;
+  display: flex;
+  justify-content: left;
+  margin-left: -2rem;
+  padding-top: 5rem;
+}
+.Resources .wrapper .items .item-row .card .link a,
+.Resources .wrapper .items .item-row .card-2 .link a,
+.Resources .wrapper .items .item-row .card-3 .link a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #1D6FA3;
+}
+.Resources .wrapper .items .item-row .card .link .arrow,
+.Resources .wrapper .items .item-row .card-2 .link .arrow,
+.Resources .wrapper .items .item-row .card-3 .link .arrow {
+  padding-left: 0.6rem;
+  padding-top: 0.6rem;
+}
+.Resources .wrapper .items .card .reparing-tool {
+  background-color: #f8f1ff;
+}
+.Resources .wrapper .items .card-2 .reparing-tool {
+  background-color: #f3f6ff;
+  margin-bottom: 6rem;
+}
+.Resources .wrapper .items .card-3 .reparing-tool {
+  background-color: #fae6e0;
+  margin-bottom: 6rem;
+}
+.Resources .wrapper .btn {
+  padding-top: 4.2rem;
+}
+.Resources .wrapper .btn button {
+  background: none;
+  border: 0.1rem solid #1D6FA3;
+  color: #24272E;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  line-height: 2.4rem;
+  border-radius: 0.4rem;
+  padding: 1rem 1.6rem;
+  gap: 1rem;
+}
+
+.Contact-us {
+  margin-inline: center;
+}
+.Contact-us .wrapper {
+  padding: 8rem;
+}
+.Contact-us .wrapper .contatent h3 {
+  color: #24272E;
+  font-family: "Inter", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+}
+.Contact-us .wrapper .contatent .para-text {
+  width: 34.58vw;
+  margin-inline: auto;
+  padding: 3.2rem 1rem;
+}
+.Contact-us .wrapper .contatent .para-text p {
+  color: #7C7D82;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  text-align: center;
+}
+.Contact-us .wrapper .contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Contact-us .wrapper .contact-form form label {
+  color: #24272E;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  display: flex;
+  justify-content: start;
+  padding-top: 0.8rem;
+}
+.Contact-us .wrapper .contact-form form .name {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+.Contact-us .wrapper .contact-form form .name .first-name,
+.Contact-us .wrapper .contact-form form .name .last-name {
+  display: flex;
+  flex-direction: column;
+}
+.Contact-us .wrapper .contact-form form .name .first-name .fname,
+.Contact-us .wrapper .contact-form form .name .first-name .lname,
+.Contact-us .wrapper .contact-form form .name .last-name .fname,
+.Contact-us .wrapper .contact-form form .name .last-name .lname {
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 1.2rem;
+  align-items: center;
+  gap: 0.8rem;
+  width: 18.55vw;
+  height: 4.4rem;
+}
+.Contact-us .wrapper .contact-form form .email .email-id,
+.Contact-us .wrapper .contact-form form .email .text,
+.Contact-us .wrapper .contact-form form .message .email-id,
+.Contact-us .wrapper .contact-form form .message .text {
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  padding: 1.2rem;
+  gap: 0.8rem;
+  width: 38.19vw;
+}
+.Contact-us .wrapper .contact-form .btn {
+  padding-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact-us .wrapper .contact-form .btn button {
+  border-radius: 0.4rem;
+  border: 1px solid #1d6fa3;
+  padding: 1rem 1.6rem;
+  color: #24272E;
+  background: none;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding: 1rem 1.6rem;
 }/*# sourceMappingURL=style.css.map */
