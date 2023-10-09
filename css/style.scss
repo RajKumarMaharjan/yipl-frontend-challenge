@@ -103,6 +103,7 @@ header {
     }
     .search-box {
       display: none;
+
       .search-input {
         display: flex;
         gap: 0.8rem;
@@ -162,6 +163,8 @@ header {
         0px 12px 16px -4px rgba(16, 24, 40, 0.08);
       margin-left: 65.5rem;
       margin-top: -1.2rem;
+      position: absolute;
+      z-index: 100;
       .dropdown-list {
         padding: 1.2rem;
         gap: 0.8rem;
@@ -200,24 +203,28 @@ header {
   .content {
     text-align: center;
     margin-top: 15.2rem;
-    h1 {
-      color: $white;
-      font-size: 6rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 7.2rem;
-      letter-spacing: -0.12rem;
-    }
-    p {
-      color: $text;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 3rem;
-      font-family: Inter, sans-serif;
-      width: 76.8rem;
-      margin-inline: auto;
-      margin-top: 2.4rem;
+    .heading {
+      position: relative;
+
+      h1 {
+        color: $white;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 7.2rem;
+        letter-spacing: -0.12rem;
+      }
+      p {
+        color: $text;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        font-family: Inter, sans-serif;
+        width: 76.8rem;
+        margin-inline: auto;
+        margin-top: 2.4rem;
+      }
     }
     .btn {
       border-radius: 0.8rem;
@@ -323,13 +330,12 @@ header {
   }
 }
 .Features-profiles {
-
   .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2.4rem;
-    margin-top:9.6rem;
+    margin-top: 9.6rem;
     margin-bottom: 9.6rem;
     .content {
       width: 36rem;
@@ -351,9 +357,9 @@ header {
         align-self: stretch;
       }
       .link {
-       a{
-        color: $blue;
-       }
+        a {
+          color: $blue;
+        }
         text-align: center;
         font-family: "DM Sans", sans-serif;
         font-size: 1.6rem;
@@ -364,12 +370,13 @@ header {
         background: none;
         padding-top: 4.8rem;
       }
-      .arrow{
-        padding-left: .6rem;
+      .arrow {
+        padding-left: 0.6rem;
         padding-top: 1rem;
       }
     }
-    .profile-pic-left {
+    .profile-pic-left,
+    .profile-pic-right {
       .profile-pic {
         .pic {
           display: flex;
@@ -383,6 +390,7 @@ header {
           img {
             width: 52.8rem;
             height: 41.5rem;
+           
           }
         }
         h3 {
@@ -398,29 +406,168 @@ header {
     }
     .profile-pic-right {
       margin-top: 14rem;
-      .profile-pic {
-        .pic {
+    }
+  }
+}
+
+.who-we-are {
+  background: #f9f9ff;
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  .slider {
+    .owl-carousel {
+      .item {
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+    .custom-nav {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-top: 0.8rem;
+      .owl-prev,
+      .owl-next {
+        width: 2.4rem;
+        height: 2.4rem;
+        color: #505258;
+        border: none;
+        background: none;
+        &:hover {
+          font-size: 2.4rem;
+        }
+      }
+      .owl-next {
+        margin-right: -79.5vw;
+      }
+    }
+  }
+}
+
+.news {
+  .wrapper {
+    .container {
+      .heading {
+        h1 {
+          font-size: 3.2rem;
+          font-weight: 600;
+          font-style: normal;
+          line-height: 4rem;
+          text-align: center;
+          color: $black;
+          padding-top: 8rem;
+        }
+        .para-text {
+          color: $gray_para;
+          font-size: 1.8rem;
+          font-weight: 400;
+          font-style: normal;
+          line-height: 2.7rem;
+          text-align: center;
+          width: 61.36rem;
+          padding-top: 3.2rem;
+          padding-bottom: 3.2rem;
+          margin-inline: auto;
+        }
+      }
+      .items {
+
+        .row {
           display: flex;
-          overflow: hidden;
-          width: 22.78vw;
-          height: 41.5rem;
-          border-radius: 1.6rem;
-          background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-          align-items: center;
+          flex-direction: row;
+          gap: 1.9rem;
+          padding-top: 1.9rem;
           justify-content: center;
-          img {
-            width: 52.8rem;
-            height: 41.5rem;
+          .card {
+            border-radius: 2rem;
+            background: #f9f9ff;
+            width: 24.79vw;
+            .card-container {
+             height: 47rem;
+              .pic {
+                width: 21.88vw;
+                height: auto;
+                background: url(<path-to-image>),
+                  lightgray 50% / cover no-repeat, #f9f9ff;
+                margin-inline: auto;
+                padding-top: 2rem;
+                overflow: hidden;
+                img {
+                  border-radius: 1.6rem ;
+                  width: 100%;
+                  height:100%;
+                }
+              }
+              .card-heading {
+                h4 {
+                  font-family: "Inter", sans-serif;
+                  font-size: 2.4rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 3.6rem;
+                  color: $black;
+                  width: 21.88vw;
+                  margin-inline: auto;
+                  padding-top: 2rem;
+                }
+              }
+              .card-text {
+                width: 21.88vw;
+                margin-inline:auto;
+                padding-top: .8rem;
+                p {
+                  color: $gray_para;
+                  font-size: 1.6rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 2.4rem;
+                 
+                }
+              }
+              .link{
+                border: none;
+                background: none;
+                padding-left:2rem;
+                padding-top: 1.7rem;
+                a{
+                 font-family: 'DM Sans', sans-serif;
+                 font-size: 1.6rem;
+                 font-style: normal;
+                 font-weight: 700;
+                 line-height: 2.4rem;
+                 color: $blue;
+                }
+                .arrow{
+                  padding-left: .6rem;
+                  padding-top: .6rem;
+                }
+              }
+            }
           }
         }
-        h3 {
-          font-size: 2.4rem;
-          font-family: "Inter", sans-serif;
+      }
+      .viewBtn{
+        display: flex;
+        justify-content: center;
+        margin-top: 3.2rem;
+        button{
+          padding: 1rem 1.6rem;
+          gap: 1rem;
+          border-radius: .4rem;
+          border: 1px solid var(--secondary-teal, #1D6FA3);
+          font-family:'DM Sans', sans-serif;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 2.4rem;
           font-style: normal;
-          font-weight: 600;
           color: $black;
-          padding-top: 2.4rem;
-          padding-bottom: 4rem;
+          background: none;
         }
       }
     }
