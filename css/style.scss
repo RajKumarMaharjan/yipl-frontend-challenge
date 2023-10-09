@@ -7,6 +7,7 @@ header {
     height: 87%;
     overflow-y: hidden;
     position: absolute;
+
     .header-bg {
       width: 100vw;
       height: auto;
@@ -43,12 +44,15 @@ header {
           height: 4.8rem;
           margin-top: 1.6rem;
         }
+
         .navbar-box {
           width: 30rem;
         }
+
         .navbar-menu {
           display: none;
         }
+
         .navbar-list {
           display: flex;
           gap: 4rem;
@@ -66,10 +70,12 @@ header {
             margin-left: 1rem;
           }
         }
+
         .navbar-resource {
           margin-top: 2.8rem;
           display: flex;
           justify-content: center;
+
           a {
             color: $white;
             font-size: 1.6rem;
@@ -78,17 +84,20 @@ header {
             line-height: 2.4rem;
             font-family: "Inter", sans-serif;
           }
+
           .dropdown {
             background: none;
             border: none;
             margin-left: 0.8rem;
             margin-top: -1rem;
+
             i {
               color: $white;
               font-size: 1.6rem;
             }
           }
         }
+
         .search {
           width: 2rem;
           height: 2rem;
@@ -101,6 +110,7 @@ header {
         }
       }
     }
+
     .search-box {
       display: none;
 
@@ -123,15 +133,18 @@ header {
           #fff;
         box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
           0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+
         input {
           border: none;
           font-size: 1.6rem;
           width: 55rem;
         }
+
         .search-icon {
           font-size: 1.6rem;
           color: $search;
         }
+
         .close-btn {
           display: flex;
           border: 0.1rem solid #f5f5f5f5;
@@ -165,9 +178,11 @@ header {
       margin-top: -1.2rem;
       position: absolute;
       z-index: 100;
+
       .dropdown-list {
         padding: 1.2rem;
         gap: 0.8rem;
+
         .dropdown-link {
           color: $white;
           display: flex;
@@ -175,10 +190,12 @@ header {
           padding: 1.2rem;
           align-self: stretch;
           border-radius: 0.8rem;
+
           img {
             width: 2.4rem;
             height: 2.4rem;
           }
+
           a {
             h4 {
               color: #101828;
@@ -187,6 +204,7 @@ header {
               font-style: normal;
               line-height: 2.4rem;
             }
+
             p {
               color: #667885;
               font-family: "Inter", sans-serif;
@@ -203,6 +221,7 @@ header {
   .content {
     text-align: center;
     margin-top: 15.2rem;
+
     .heading {
       position: relative;
 
@@ -214,6 +233,7 @@ header {
         line-height: 7.2rem;
         letter-spacing: -0.12rem;
       }
+
       p {
         color: $text;
         text-align: center;
@@ -226,6 +246,7 @@ header {
         margin-top: 2.4rem;
       }
     }
+
     .btn {
       border-radius: 0.8rem;
       border: 0.1rem solid #ffe500;
@@ -244,6 +265,7 @@ header {
         font-family: Inter, sans-serif;
         color: $white;
       }
+      
       i {
         color: $white;
         width: 2.4rem;
@@ -257,6 +279,7 @@ header {
   background: #f9f9ff;
   .container {
     .Campaigns {
+
       h1 {
         font-size: 3.2rem;
         font-weight: 600;
@@ -265,6 +288,7 @@ header {
         color: $black;
         padding-top: 9.6rem;
       }
+
       p {
         font-size: 2rem;
         font-weight: 400;
@@ -276,18 +300,21 @@ header {
         margin-inline: auto;
       }
     }
+
     .row {
       display: flex;
       justify-content: center;
       gap: 2.7rem;
       margin-top: 4.8rem;
       padding-bottom: 9.6rem;
+
       .campaigns-card {
         width: 24.4vw;
         height: auto;
         overflow: hidden;
         border-radius: 5%;
         background: $white;
+
         .campaigns-img {
           width: 24.4vw;
           transition: transform 1s ease-in-out;
@@ -298,6 +325,7 @@ header {
         .card-text {
           margin-top: 2.8rem;
           padding: 2.4rem 2.94rem 2.4rem 3.2rem;
+
           h3 {
             font-size: 1.8rem;
             font-weight: 700;
@@ -305,6 +333,7 @@ header {
             line-height: 2.7rem;
             color: $black;
           }
+
           p {
             font-size: 1.4rem;
             font-weight: 400;
@@ -314,9 +343,11 @@ header {
             padding-top: 1.1rem;
             padding-bottom: 2.9rem;
           }
+
           .link {
             color: $blue;
             font-size: 1.8rem;
+
             a {
               font-weight: 700;
               font-family: "DM Sans", sans-serif;
@@ -337,9 +368,11 @@ header {
     gap: 2.4rem;
     margin-top: 9.6rem;
     margin-bottom: 9.6rem;
+
     .content {
       width: 36rem;
       padding-right: 2.1rem;
+
       h2 {
         color: $black;
         font-size: 3.2rem;
@@ -348,6 +381,7 @@ header {
         line-height: 4rem;
         align-self: stretch;
       }
+
       .supporting-text {
         color: $black;
         font-size: 1.8rem;
@@ -356,10 +390,8 @@ header {
         line-height: 2.7rem;
         align-self: stretch;
       }
+
       .link {
-        a {
-          color: $blue;
-        }
         text-align: center;
         font-family: "DM Sans", sans-serif;
         font-size: 1.6rem;
@@ -369,7 +401,12 @@ header {
         border: none;
         background: none;
         padding-top: 4.8rem;
+
+        a {
+          color: $blue;
+        }
       }
+
       .arrow {
         padding-left: 0.6rem;
         padding-top: 1rem;
@@ -377,11 +414,12 @@ header {
     }
     .profile-pic-left,
     .profile-pic-right {
-      .profile-pic ,
-      .profile-pic-1{
+      .profile-pic,
+      .profile-pic-1 {
         overflow: hidden;
         width: 22.78vw;
-          height: 41.5rem;
+        height: 41.5rem;
+
         .pic {
           display: flex;
           overflow: hidden;
@@ -392,16 +430,17 @@ header {
           align-items: center;
           justify-content: center;
           transition: 1s ease-in-out;
-          &:hover{
+
+          &:hover {
             transform: scale(1.2);
           }
-       
+
           img {
             width: 51.8rem;
             height: 41.5rem;
-            
           }
         }
+
         h3 {
           font-size: 2.4rem;
           font-family: "Inter", sans-serif;
@@ -413,10 +452,12 @@ header {
           position: absolute;
         }
       }
-      .profile-pic-1{
+
+      .profile-pic-1 {
         margin-top: 6.8rem;
       }
     }
+
     .profile-pic-right {
       margin-top: 14rem;
     }
@@ -445,6 +486,7 @@ header {
       align-items: center;
       text-align: center;
       margin-top: 0.8rem;
+
       .owl-prev,
       .owl-next {
         width: 2.4rem;
@@ -452,12 +494,15 @@ header {
         color: #505258;
         border: none;
         background: none;
+
         &:hover {
           font-size: 2.4rem;
         }
       }
+
       .owl-next {
-        margin-right: -79.5vw;
+        margin-right: -81vw;
+        padding-left: 2rem;
       }
     }
   }
@@ -476,6 +521,7 @@ header {
           color: $black;
           padding-top: 8rem;
         }
+
         .para-text {
           color: $gray_para;
           font-size: 1.8rem;
@@ -489,6 +535,7 @@ header {
           margin-inline: auto;
         }
       }
+
       .items {
         .row {
           display: flex;
@@ -496,12 +543,15 @@ header {
           gap: 1.9rem;
           padding-top: 1.9rem;
           justify-content: center;
+
           .card {
             border-radius: 2rem;
             background: #f9f9ff;
             width: 24.79vw;
+
             .card-container {
               height: 47rem;
+
               .pic {
                 width: 21.88vw;
                 height: auto;
@@ -510,12 +560,14 @@ header {
                 margin-inline: auto;
                 padding-top: 2rem;
                 overflow: hidden;
+
                 img {
                   border-radius: 1.6rem;
                   width: 100%;
                   height: 100%;
                 }
               }
+
               .card-heading {
                 h4 {
                   font-family: "Inter", sans-serif;
@@ -529,10 +581,12 @@ header {
                   padding-top: 2rem;
                 }
               }
+
               .card-text {
                 width: 21.88vw;
                 margin-inline: auto;
                 padding-top: 0.8rem;
+
                 p {
                   color: $gray_para;
                   font-size: 1.6rem;
@@ -541,11 +595,13 @@ header {
                   line-height: 2.4rem;
                 }
               }
+
               .link {
                 border: none;
                 background: none;
                 padding-left: 2rem;
                 padding-top: 1.7rem;
+
                 a {
                   font-family: "DM Sans", sans-serif;
                   font-size: 1.6rem;
@@ -554,6 +610,7 @@ header {
                   line-height: 2.4rem;
                   color: $blue;
                 }
+
                 .arrow {
                   padding-left: 0.6rem;
                   padding-top: 0.6rem;
@@ -563,11 +620,13 @@ header {
           }
         }
       }
+
       .viewBtn {
         display: flex;
         justify-content: center;
         margin-top: 3.2rem;
         margin-bottom: 8rem;
+
         button {
           padding: 1rem 1.6rem;
           gap: 1rem;
@@ -596,6 +655,7 @@ header {
 
   .wrapper {
     text-align: center;
+
     .heading-content {
       h2 {
         color: $black;
@@ -604,6 +664,7 @@ header {
         line-height: 4rem;
       }
     }
+
     .para-content {
       color: $resource_gray;
       font-size: 1.8rem;
@@ -614,12 +675,14 @@ header {
       padding-top: 3.2rem;
       margin-inline: auto;
     }
+
     .items {
       .item-row {
         display: flex;
         flex-direction: row;
         gap: 2.6rem;
         padding-top: 3.2rem;
+
         .card,
         .card-2,
         .card-3 {
@@ -642,6 +705,7 @@ header {
                 padding: 1.72rem 1.64rem 1.63rem 1.71rem;
               }
             }
+
             .tool-text {
               color: #66686d;
               font-family: "Inter", sans-serif;
@@ -651,10 +715,12 @@ header {
               padding-top: 2rem;
             }
           }
+
           .item-heading {
             display: flex;
             justify-content: start;
             padding-top: 2.2rem;
+
             h4 {
               font-size: 2.4rem;
               font-family: "Inter", sans-serif;
@@ -663,8 +729,10 @@ header {
               color: $black;
             }
           }
+
           .card-text {
             padding-top: 1.24rem;
+
             p {
               color: $resource_gray;
               font-size: 1.6rem;
@@ -673,6 +741,7 @@ header {
               text-align: left;
             }
           }
+
           .link {
             border: none;
             background: none;
@@ -682,6 +751,7 @@ header {
             justify-content: left;
             margin-left: -2rem;
             padding-top: 5rem;
+
             a {
               font-family: "DM Sans", sans-serif;
               font-size: 1.6rem;
@@ -690,6 +760,7 @@ header {
               line-height: 2.4rem;
               color: $blue;
             }
+
             .arrow {
               padding-left: 0.6rem;
               padding-top: 0.6rem;
@@ -697,26 +768,26 @@ header {
           }
         }
       }
-      .card {
+
+      .card,
+      .card-2,
+      .card-3 {
         .reparing-tool {
           background-color: #f8f1ff;
         }
       }
-      .card-2 {
-        .reparing-tool {
-          background-color: #f3f6ff;
-          margin-bottom: 6rem;
-        }
-      }
+
+      .card-2,
       .card-3 {
         .reparing-tool {
-          background-color: #fae6e0;
           margin-bottom: 6rem;
         }
       }
     }
+
     .btn {
       padding-top: 4.2rem;
+
       button {
         background: none;
         border: 0.1rem solid $blue;
@@ -746,6 +817,7 @@ header {
         line-height: 4rem;
         text-align: center;
       }
+
       .para-text {
         width: 34.58vw;
         margin-inline: auto;
@@ -759,12 +831,14 @@ header {
         }
       }
     }
+
     .contact-form {
       form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         label {
           color: $black;
           font-family: "Inter", sans-serif;
@@ -775,14 +849,17 @@ header {
           justify-content: start;
           padding-top: 0.8rem;
         }
+
         .name {
           display: flex;
           flex-direction: row;
           gap: 1.6rem;
+
           .first-name,
           .last-name {
             display: flex;
             flex-direction: column;
+
             .fname,
             .lname {
               border-radius: 0.8rem;
@@ -796,6 +873,7 @@ header {
             }
           }
         }
+
         .email,
         .message {
           .email-id,
@@ -809,11 +887,13 @@ header {
           }
         }
       }
+
       .btn {
         padding-top: 3.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
         button {
           border-radius: 0.4rem;
           border: 1px solid #1d6fa3;
@@ -841,6 +921,7 @@ footer {
         position: relative;
       }
     }
+
     .overlay-1,
     .overlay-2 {
       width: 100%;
@@ -850,92 +931,98 @@ footer {
       position: absolute;
       margin-top: -48.2rem;
     }
+
     .overlay-2 {
       opacity: 0.5;
       background: linear-gradient(135deg, #3387d7 0%, #093157 100%);
     }
-    .footer-content{
+
+    .footer-wrapper {
       position: absolute;
-      margin-top: -35rem;
-      padding-left: 16.5rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      .footer-left{
-        .logo{
-          display: flex;
-          flex-direction: row;
-          .logomark{
-            width: 4.53vw;
-            height: 6.51rem;
+      .footer-content {
+        margin-top: -35rem;
+        padding-inline: 16.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 33.7rem;
+
+        .footer-left {
+          .logo {
+            display: flex;
+            flex-direction: row;
+            .logomark {
+              width: 4.53vw;
+              height: 6.51rem;
+            }
+            .logotype {
+              width: 10.5vw;
+              height: 3.95rem;
+              margin-top: 2rem;
+              margin-left: 2rem;
+            }
           }
-          .logotype{
-            width: 10.5vw;
-            height: 3.95rem;
-            margin-top:2rem;
-            margin-left: 2rem;
+          .para-text {
+            width: 21.11vw;
+            padding-top: 3.2rem;
+            p {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 2.1rem;
+              color: #fff;
+            }
           }
-        }
-        .para-text{
-          width: 21.11vw;
-          padding-top: 3.2rem;
-          p{
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 2.1rem;
-            color: #fff;
-  
-          }
-        }
-        .social-media{
-          display: flex;
-          gap: 1.6rem;
-          padding-top: 2.4rem;
-          .twitter-icon,
-          .In-icon,
-          .youtube-icon{
-              color: #3A3D43;
+          .social-media {
+            display: flex;
+            gap: 1.6rem;
+            padding-top: 2.4rem;
+            .twitter-icon,
+            .In-icon,
+            .youtube-icon {
+              color: #3a3d43;
               background: #ffffff;
               font-size: 2rem;
-              padding: .7rem .8rem;
+              padding: 0.7rem 0.8rem;
               border-radius: 50%;
-          }
-         .In-icon{
-          padding: .7rem 1rem;
-         }
-         .youtube-icon{
-          padding: .8rem;
-         }
-        }
-      }
-      .footer-right{
-        padding-left: 33.7rem;
-        .footer-list{
-          display: flex;
-          flex-direction: row;
-          gap: 8rem;
-          .list{
-            .link-head,
-            .Resources-head,
-            .work-head{
-              h5{
-                font-size: 1.6rem;
-                font-family: 'Inter', sans-serif;
-                font-weight: 600;
-                line-height: 2rem;
-                color: #fff;
-              }        
             }
-            .links-list{
-              padding-top: 3.2rem;
-              .list-group{
-                a{
+            .In-icon {
+              padding: 0.7rem 1rem;
+            }
+            .youtube-icon {
+              padding: 0.8rem;
+            }
+          }
+        }
+
+        .footer-right {
+          .footer-list {
+            display: flex;
+            flex-direction: row;
+            gap: 8rem;
+            .list {
+              .link-head,
+              .Resources-head,
+              .work-head {
+                h5 {
+                  font-size: 1.6rem;
+                  font-family: "Inter", sans-serif;
+                  font-weight: 600;
+                  line-height: 2rem;
                   color: #fff;
-                  font-size: 1.4rem;
-                  font-weight: 400;
-                  font-family: 'DM Sans', sans-serif;
-                  line-height: 1.8rem;
-                  padding-bottom: 1.6rem;
+                }
+              }
+              .links-list {
+                padding-top: 3.2rem;
+                .list-group {
+                  a {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    font-family: "DM Sans", sans-serif;
+                    line-height: 1.8rem;
+                    padding-bottom: 1.6rem;
+                  }
                 }
               }
             }
@@ -944,17 +1031,17 @@ footer {
       }
     }
   }
-  .copyright{
-    background: #F9F9FF;
-   
 
-    .copyright-warpper{
+  .copyright {
+    background: #f9f9ff;
+
+    .copyright-warpper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding: 3.2rem 16.4rem;
-      .text{
-        P{
+      .text {
+        P {
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 2.1rem;
@@ -962,30 +1049,29 @@ footer {
           text-align: center;
         }
       }
-      .cc-logo{
-        img{
+      .cc-logo {
+        img {
           width: 7.293vw;
           height: 2.5rem;
         }
       }
     }
-    
-    .scroll{
+
+    .scroll {
       float: right;
       margin-top: -6rem;
       margin-right: 2.4rem;
-     .btn{
-      background: #fff;
-      border-radius: 50%;
-      border: none;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-      i{
-        font-size: 1.6rem;
-        padding: 1rem 1.2rem;
-        color: $resource_gray;
+      .btn {
+        background: #fff;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        i {
+          font-size: 1.6rem;
+          padding: 1rem 1.2rem;
+          color: $resource_gray;
+        }
       }
-     }
-    
+    }
   }
-}
 }
