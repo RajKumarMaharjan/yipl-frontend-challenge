@@ -32,3 +32,13 @@ function dropdown(){
     }
 };
 
+const ScrollToTopButton = document.getElementById("ScrollToTop");
+
+ScrollToTopButton.addEventListener("click", ScrollToTop);
+
+function ScrollToTop(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+};

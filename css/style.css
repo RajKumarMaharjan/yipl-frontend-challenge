@@ -416,6 +416,11 @@ header .content .btn i {
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   align-items: center;
   justify-content: center;
+  transition: transform 1s ease-in-out;
+}
+.Features-profiles .row .profile-pic-left .profile-pic .pic :hover,
+.Features-profiles .row .profile-pic-right .profile-pic .pic :hover {
+  transform: scale(1.2);
 }
 .Features-profiles .row .profile-pic-left .profile-pic .pic img,
 .Features-profiles .row .profile-pic-right .profile-pic .pic img {
@@ -828,4 +833,140 @@ header .content .btn i {
   font-weight: 700;
   line-height: 2.4rem;
   padding: 1rem 1.6rem;
+}
+
+footer .footer-group .bg-img img {
+  width: 100%;
+  height: 48rem;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  position: relative;
+}
+footer .footer-group .overlay-1,
+footer .footer-group .overlay-2 {
+  width: 100%;
+  height: 48rem;
+  opacity: 0.8;
+  background: #24272e;
+  position: absolute;
+  margin-top: -48.2rem;
+}
+footer .footer-group .overlay-2 {
+  opacity: 0.5;
+  background: linear-gradient(135deg, #3387d7 0%, #093157 100%);
+}
+footer .footer-group .footer-content {
+  position: absolute;
+  margin-top: -35rem;
+  padding-left: 16.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer-group .footer-content .footer-left .logo {
+  display: flex;
+  flex-direction: row;
+}
+footer .footer-group .footer-content .footer-left .logo .logomark {
+  width: 4.53vw;
+  height: 6.51rem;
+}
+footer .footer-group .footer-content .footer-left .logo .logotype {
+  width: 10.5vw;
+  height: 3.95rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+footer .footer-group .footer-content .footer-left .para-text {
+  width: 21.11vw;
+  padding-top: 3.2rem;
+}
+footer .footer-group .footer-content .footer-left .para-text p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #fff;
+}
+footer .footer-group .footer-content .footer-left .social-media {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 2.4rem;
+}
+footer .footer-group .footer-content .footer-left .social-media .twitter-icon,
+footer .footer-group .footer-content .footer-left .social-media .In-icon,
+footer .footer-group .footer-content .footer-left .social-media .youtube-icon {
+  color: #3A3D43;
+  background: #ffffff;
+  font-size: 2rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 50%;
+}
+footer .footer-group .footer-content .footer-left .social-media .In-icon {
+  padding: 0.7rem 1rem;
+}
+footer .footer-group .footer-content .footer-left .social-media .youtube-icon {
+  padding: 0.8rem;
+}
+footer .footer-group .footer-content .footer-right {
+  padding-left: 33.7rem;
+}
+footer .footer-group .footer-content .footer-right .footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+footer .footer-group .footer-content .footer-right .footer-list .list .link-head h5,
+footer .footer-group .footer-content .footer-right .footer-list .list .Resources-head h5,
+footer .footer-group .footer-content .footer-right .footer-list .list .work-head h5 {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #fff;
+}
+footer .footer-group .footer-content .footer-right .footer-list .list .links-list {
+  padding-top: 3.2rem;
+}
+footer .footer-group .footer-content .footer-right .footer-list .list .links-list .list-group a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8rem;
+  padding-bottom: 1.6rem;
+}
+footer .copyright {
+  background: #F9F9FF;
+}
+footer .copyright .copyright-warpper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.2rem 16.4rem;
+}
+footer .copyright .copyright-warpper .text P {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #7C7D82;
+  text-align: center;
+}
+footer .copyright .copyright-warpper .cc-logo img {
+  width: 7.293vw;
+  height: 2.5rem;
+}
+footer .copyright .scroll {
+  float: right;
+  margin-top: -6rem;
+  margin-right: 2.4rem;
+}
+footer .copyright .scroll .btn {
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+footer .copyright .scroll .btn i {
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  color: #7C7D82;
 }/*# sourceMappingURL=style.css.map */

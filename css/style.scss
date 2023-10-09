@@ -387,6 +387,10 @@ header {
           background: url(<path-to-image>), lightgray 50% / cover no-repeat;
           align-items: center;
           justify-content: center;
+          transition: transform 1s ease-in-out;
+          :hover {
+            transform: scale(1.2);
+          }
           img {
             width: 52.8rem;
             height: 41.5rem;
@@ -746,7 +750,7 @@ header {
       }
     }
     .contact-form {
-      form{
+      form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -807,7 +811,7 @@ header {
           color: $black;
           background: none;
           font-size: 1.6rem;
-          font-family: 'DM Sans', sans-serif;
+          font-family: "DM Sans", sans-serif;
           font-weight: 700;
           line-height: 2.4rem;
           padding: 1rem 1.6rem;
@@ -815,4 +819,163 @@ header {
       }
     }
   }
+}
+
+footer {
+  .footer-group {
+    .bg-img {
+      img {
+        width: 100%;
+        height: 48rem;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        position: relative;
+      }
+    }
+    .overlay-1,
+    .overlay-2 {
+      width: 100%;
+      height: 48rem;
+      opacity: 0.8;
+      background: #24272e;
+      position: absolute;
+      margin-top: -48.2rem;
+    }
+    .overlay-2 {
+      opacity: 0.5;
+      background: linear-gradient(135deg, #3387d7 0%, #093157 100%);
+    }
+    .footer-content{
+      position: absolute;
+      margin-top: -35rem;
+      padding-left: 16.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .footer-left{
+        .logo{
+          display: flex;
+          flex-direction: row;
+          .logomark{
+            width: 4.53vw;
+            height: 6.51rem;
+          }
+          .logotype{
+            width: 10.5vw;
+            height: 3.95rem;
+            margin-top:2rem;
+            margin-left: 2rem;
+          }
+        }
+        .para-text{
+          width: 21.11vw;
+          padding-top: 3.2rem;
+          p{
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2.1rem;
+            color: #fff;
+  
+          }
+        }
+        .social-media{
+          display: flex;
+          gap: 1.6rem;
+          padding-top: 2.4rem;
+          .twitter-icon,
+          .In-icon,
+          .youtube-icon{
+              color: #3A3D43;
+              background: #ffffff;
+              font-size: 2rem;
+              padding: .7rem .8rem;
+              border-radius: 50%;
+          }
+         .In-icon{
+          padding: .7rem 1rem;
+         }
+         .youtube-icon{
+          padding: .8rem;
+         }
+        }
+      }
+      .footer-right{
+        padding-left: 33.7rem;
+        .footer-list{
+          display: flex;
+          flex-direction: row;
+          gap: 8rem;
+          .list{
+            .link-head,
+            .Resources-head,
+            .work-head{
+              h5{
+                font-size: 1.6rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                line-height: 2rem;
+                color: #fff;
+              }        
+            }
+            .links-list{
+              padding-top: 3.2rem;
+              .list-group{
+                a{
+                  color: #fff;
+                  font-size: 1.4rem;
+                  font-weight: 400;
+                  font-family: 'DM Sans', sans-serif;
+                  line-height: 1.8rem;
+                  padding-bottom: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    background: #F9F9FF;
+   
+
+    .copyright-warpper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3.2rem 16.4rem;
+      .text{
+        P{
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 2.1rem;
+          color: $resource_gray;
+          text-align: center;
+        }
+      }
+      .cc-logo{
+        img{
+          width: 7.293vw;
+          height: 2.5rem;
+        }
+      }
+    }
+    
+    .scroll{
+      float: right;
+      margin-top: -6rem;
+      margin-right: 2.4rem;
+     .btn{
+      background: #fff;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+      i{
+        font-size: 1.6rem;
+        padding: 1rem 1.2rem;
+        color: $resource_gray;
+      }
+     }
+    
+  }
+}
 }
