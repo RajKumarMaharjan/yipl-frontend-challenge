@@ -324,9 +324,9 @@ header .content .btn i {
 }
 .Features-Campaigns .container .row .campaigns-card .campaigns-img {
   width: 24.4vw;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease-in-out;
 }
-.Features-Campaigns .container .row .campaigns-card .campaigns-img :hover {
+.Features-Campaigns .container .row .campaigns-card .campaigns-img:hover {
   transform: scale(1.2);
 }
 .Features-Campaigns .container .row .campaigns-card .card-text {
@@ -406,8 +406,18 @@ header .content .btn i {
   padding-left: 0.6rem;
   padding-top: 1rem;
 }
+.Features-profiles .row .profile-pic-left .profile-pic,
+.Features-profiles .row .profile-pic-left .profile-pic-1,
+.Features-profiles .row .profile-pic-right .profile-pic,
+.Features-profiles .row .profile-pic-right .profile-pic-1 {
+  overflow: hidden;
+  width: 22.78vw;
+  height: 41.5rem;
+}
 .Features-profiles .row .profile-pic-left .profile-pic .pic,
-.Features-profiles .row .profile-pic-right .profile-pic .pic {
+.Features-profiles .row .profile-pic-left .profile-pic-1 .pic,
+.Features-profiles .row .profile-pic-right .profile-pic .pic,
+.Features-profiles .row .profile-pic-right .profile-pic-1 .pic {
   display: flex;
   overflow: hidden;
   width: 22.78vw;
@@ -416,19 +426,25 @@ header .content .btn i {
   background: url(<path-to-image>), lightgray 50%/cover no-repeat;
   align-items: center;
   justify-content: center;
-  transition: transform 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
-.Features-profiles .row .profile-pic-left .profile-pic .pic :hover,
-.Features-profiles .row .profile-pic-right .profile-pic .pic :hover {
+.Features-profiles .row .profile-pic-left .profile-pic .pic:hover,
+.Features-profiles .row .profile-pic-left .profile-pic-1 .pic:hover,
+.Features-profiles .row .profile-pic-right .profile-pic .pic:hover,
+.Features-profiles .row .profile-pic-right .profile-pic-1 .pic:hover {
   transform: scale(1.2);
 }
 .Features-profiles .row .profile-pic-left .profile-pic .pic img,
-.Features-profiles .row .profile-pic-right .profile-pic .pic img {
-  width: 52.8rem;
+.Features-profiles .row .profile-pic-left .profile-pic-1 .pic img,
+.Features-profiles .row .profile-pic-right .profile-pic .pic img,
+.Features-profiles .row .profile-pic-right .profile-pic-1 .pic img {
+  width: 51.8rem;
   height: 41.5rem;
 }
 .Features-profiles .row .profile-pic-left .profile-pic h3,
-.Features-profiles .row .profile-pic-right .profile-pic h3 {
+.Features-profiles .row .profile-pic-left .profile-pic-1 h3,
+.Features-profiles .row .profile-pic-right .profile-pic h3,
+.Features-profiles .row .profile-pic-right .profile-pic-1 h3 {
   font-size: 2.4rem;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -436,6 +452,11 @@ header .content .btn i {
   color: #24272E;
   padding-top: 2.4rem;
   padding-bottom: 4rem;
+  position: absolute;
+}
+.Features-profiles .row .profile-pic-left .profile-pic-1,
+.Features-profiles .row .profile-pic-right .profile-pic-1 {
+  margin-top: 6.8rem;
 }
 .Features-profiles .row .profile-pic-right {
   margin-top: 14rem;

@@ -290,8 +290,8 @@ header {
         background: $white;
         .campaigns-img {
           width: 24.4vw;
-          transition: transform 0.3s ease;
-          :hover {
+          transition: transform 1s ease-in-out;
+          &:hover {
             transform: scale(1.2);
           }
         }
@@ -377,7 +377,11 @@ header {
     }
     .profile-pic-left,
     .profile-pic-right {
-      .profile-pic {
+      .profile-pic ,
+      .profile-pic-1{
+        overflow: hidden;
+        width: 22.78vw;
+          height: 41.5rem;
         .pic {
           display: flex;
           overflow: hidden;
@@ -387,13 +391,15 @@ header {
           background: url(<path-to-image>), lightgray 50% / cover no-repeat;
           align-items: center;
           justify-content: center;
-          transition: transform 1s ease-in-out;
-          :hover {
+          transition: 1s ease-in-out;
+          &:hover{
             transform: scale(1.2);
           }
+       
           img {
-            width: 52.8rem;
+            width: 51.8rem;
             height: 41.5rem;
+            
           }
         }
         h3 {
@@ -404,7 +410,11 @@ header {
           color: $black;
           padding-top: 2.4rem;
           padding-bottom: 4rem;
+          position: absolute;
         }
+      }
+      .profile-pic-1{
+        margin-top: 6.8rem;
       }
     }
     .profile-pic-right {
