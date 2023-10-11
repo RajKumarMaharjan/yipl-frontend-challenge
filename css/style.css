@@ -864,7 +864,8 @@ header .content .btn i {
   line-height: 2.4rem;
   display: flex;
   justify-content: start;
-  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-top: 1.6rem;
 }
 .Contact-us .wrapper .contact-form form .name {
   display: flex;
