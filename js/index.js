@@ -34,11 +34,20 @@ function dropdown(){
 
 const ScrollToTopButton = document.getElementById("ScrollToTop");
 
-ScrollToTopButton.addEventListener("click", ScrollToTop);
+window.addEventListener("scroll", toggleScrollToTopButton);
+ScrollToTopButton.addEventListener("click", scrollToTop);
 
-function ScrollToTop(){
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-};
+function toggleScrollToTopButton() {
+  if (window.scrollY > 300) {
+    ScrollToTopButton.style.display = "block";
+  } else {
+    ScrollToTopButton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}

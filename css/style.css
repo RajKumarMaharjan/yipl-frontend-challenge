@@ -320,6 +320,27 @@ header .content .btn i {
   height: 2.4rem;
 }
 
+.scroll-Top {
+  position: fixed;
+  margin-top: 13.8rem;
+  right: 2.25rem;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.scroll-Top .btn {
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.scroll-Top .btn i {
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  color: #7C7D82;
+}
+
 .Features-Campaigns {
   background: #f9f9ff;
 }
@@ -1042,20 +1063,4 @@ footer .copyright .copyright-warpper .text P {
 footer .copyright .copyright-warpper .cc-logo img {
   width: 7.293vw;
   height: 2.5rem;
-}
-footer .copyright .scroll {
-  float: right;
-  margin-top: -6rem;
-  margin-right: 2.4rem;
-}
-footer .copyright .scroll .btn {
-  background: #fff;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-}
-footer .copyright .scroll .btn i {
-  font-size: 1.6rem;
-  padding: 1rem 1.2rem;
-  color: #7C7D82;
 }/*# sourceMappingURL=style.css.map */

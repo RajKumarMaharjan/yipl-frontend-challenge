@@ -297,7 +297,26 @@ header {
     }
   }
 }
+.scroll-Top {
+  position: fixed;
+  margin-top: 13.8rem;
+  right: 2.25rem;
+  z-index: 99;
+  cursor: pointer;
+}
 
+.scroll-Top .btn {
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.scroll-Top .btn i {
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  color: $resource_gray;
+}
 .Features-Campaigns {
   background: #f9f9ff;
   .container {
@@ -1086,23 +1105,6 @@ footer {
         img {
           width: 7.293vw;
           height: 2.5rem;
-        }
-      }
-    }
-
-    .scroll {
-      float: right;
-      margin-top: -6rem;
-      margin-right: 2.4rem;
-      .btn {
-        background: #fff;
-        border-radius: 50%;
-        border: none;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-        i {
-          font-size: 1.6rem;
-          padding: 1rem 1.2rem;
-          color: $resource_gray;
         }
       }
     }
