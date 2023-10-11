@@ -676,7 +676,7 @@ header .content .btn i {
 .Resources .wrapper .items .item-row .card-2,
 .Resources .wrapper .items .item-row .card-3 {
   width: 24.51vw;
-  height: 33.75rem;
+  height: auto;
   border-radius: 2.18rem;
   background: #fff;
   padding: 3.62rem 3rem 1.83rem 2.9rem;
