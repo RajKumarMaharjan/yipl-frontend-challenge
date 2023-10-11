@@ -1,5 +1,7 @@
 {"scripts": {
-  "watch": "node-sass -w css/style.scss css/style.css"
+  "watch": "node-sass -w css/style.scss css/style.css",
+  "build": "node-sass -w css/style.scss css/style.css",
+  "sass": "sass css/style.scss css/style.css"
 },
   "dependencies": {
     "node-sass": "^9.0.0"
