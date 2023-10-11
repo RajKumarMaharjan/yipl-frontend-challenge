@@ -6,7 +6,7 @@
 
 ## Installing
 
-# npm install node-sass
+# npm install node
 
 # npm run watch `to run sass`
 
@@ -19,9 +19,7 @@
 ```js
 
 
-## Acknowledgments
 
-- Thanks to [Bikram Tuladhar (bro)] for support.
 
 
 

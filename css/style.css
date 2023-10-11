@@ -85,6 +85,10 @@ header .hero .head-box {
 }
 header .hero .head-box .navbar {
   display: flex;
+  justify-content: space-between;
+}
+header .hero .head-box .navbar .nav-left {
+  display: flex;
   gap: 4rem;
 }
 header .hero .head-box .navbar .logo {
@@ -93,15 +97,16 @@ header .hero .head-box .navbar .logo {
   margin-top: 1.6rem;
 }
 header .hero .head-box .navbar .navbar-box {
-  width: 30rem;
+  display: flex;
+  flex-direction: row;
 }
 header .hero .head-box .navbar .navbar-menu {
   display: none;
 }
 header .hero .head-box .navbar .navbar-list {
   display: flex;
-  gap: 4rem;
   margin-top: 2.8rem;
+  gap: 4rem;
 }
 header .hero .head-box .navbar .navbar-list a {
   color: #FFF;
@@ -118,6 +123,9 @@ header .hero .head-box .navbar .navbar-resource {
   margin-top: 2.8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-left: 34.1rem;
+  position: absolute;
 }
 header .hero .head-box .navbar .navbar-resource a {
   color: #FFF;
@@ -131,7 +139,6 @@ header .hero .head-box .navbar .navbar-resource .dropdown {
   background: none;
   border: none;
   margin-left: 0.8rem;
-  margin-top: -1rem;
 }
 header .hero .head-box .navbar .navbar-resource .dropdown i {
   color: #FFF;
@@ -142,10 +149,11 @@ header .hero .head-box .navbar .search {
   height: 2rem;
   color: #FFF;
   margin-top: 3rem;
-  margin-left: 53.3rem;
+  margin-left: -4rem;
   font-size: 1.6rem;
   background: none;
   border: none;
+  position: absolute;
 }
 header .hero .search-box {
   display: none;
@@ -657,16 +665,56 @@ header .content .btn i {
   gap: 0.86rem;
 }
 .Resources .wrapper .items .item-row .card .tool .reparing-tool,
+.Resources .wrapper .items .item-row .card .tool .document,
+.Resources .wrapper .items .item-row .card .tool .checked,
 .Resources .wrapper .items .item-row .card-2 .tool .reparing-tool,
-.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool {
+.Resources .wrapper .items .item-row .card-2 .tool .document,
+.Resources .wrapper .items .item-row .card-2 .tool .checked,
+.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool,
+.Resources .wrapper .items .item-row .card-3 .tool .document,
+.Resources .wrapper .items .item-row .card-3 .tool .checked {
   width: 6.5rem;
   height: 6.5rem;
   border-radius: 1.8191rem;
 }
-.Resources .wrapper .items .item-row .card .tool .reparing-tool img,
-.Resources .wrapper .items .item-row .card-2 .tool .reparing-tool img,
-.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool img {
-  padding: 1.72rem 1.64rem 1.63rem 1.71rem;
+.Resources .wrapper .items .item-row .card .tool .reparing-tool i,
+.Resources .wrapper .items .item-row .card .tool .document i,
+.Resources .wrapper .items .item-row .card .tool .checked i,
+.Resources .wrapper .items .item-row .card-2 .tool .reparing-tool i,
+.Resources .wrapper .items .item-row .card-2 .tool .document i,
+.Resources .wrapper .items .item-row .card-2 .tool .checked i,
+.Resources .wrapper .items .item-row .card-3 .tool .reparing-tool i,
+.Resources .wrapper .items .item-row .card-3 .tool .document i,
+.Resources .wrapper .items .item-row .card-3 .tool .checked i {
+  font-size: 3.2rem;
+  padding: 2rem;
+  background: #f8f1ff;
+  border-radius: 1.82rem;
+  color: #a276ff;
+}
+.Resources .wrapper .items .item-row .card .tool .document,
+.Resources .wrapper .items .item-row .card-2 .tool .document,
+.Resources .wrapper .items .item-row .card-3 .tool .document {
+  margin-bottom: 5.7rem;
+}
+.Resources .wrapper .items .item-row .card .tool .document i,
+.Resources .wrapper .items .item-row .card-2 .tool .document i,
+.Resources .wrapper .items .item-row .card-3 .tool .document i {
+  background: #F3F6FF;
+  color: #7291ff;
+  padding-inline: 2.5rem;
+}
+.Resources .wrapper .items .item-row .card .tool .checked,
+.Resources .wrapper .items .item-row .card-2 .tool .checked,
+.Resources .wrapper .items .item-row .card-3 .tool .checked {
+  margin-bottom: 5.7rem;
+}
+.Resources .wrapper .items .item-row .card .tool .checked i,
+.Resources .wrapper .items .item-row .card-2 .tool .checked i,
+.Resources .wrapper .items .item-row .card-3 .tool .checked i {
+  color: #FF5400;
+  background: #FAE6E0;
+  padding-inline: 2.1rem;
 }
 .Resources .wrapper .items .item-row .card .tool .tool-text,
 .Resources .wrapper .items .item-row .card-2 .tool .tool-text,
@@ -677,6 +725,7 @@ header .content .btn i {
   font-weight: 400;
   line-height: 2.7rem;
   padding-top: 2rem;
+  padding-left: 0.864rem;
 }
 .Resources .wrapper .items .item-row .card .item-heading,
 .Resources .wrapper .items .item-row .card-2 .item-heading,
@@ -735,15 +784,6 @@ header .content .btn i {
 .Resources .wrapper .items .item-row .card-3 .link .arrow {
   padding-left: 0.6rem;
   padding-top: 0.6rem;
-}
-.Resources .wrapper .items .card .reparing-tool,
-.Resources .wrapper .items .card-2 .reparing-tool,
-.Resources .wrapper .items .card-3 .reparing-tool {
-  background-color: #f8f1ff;
-}
-.Resources .wrapper .items .card-2 .reparing-tool,
-.Resources .wrapper .items .card-3 .reparing-tool {
-  margin-bottom: 6rem;
 }
 .Resources .wrapper .btn {
   padding-top: 4.2rem;
