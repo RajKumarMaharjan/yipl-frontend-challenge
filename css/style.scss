@@ -32,83 +32,101 @@ header {
 
       .navbar {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         .nav-left {
           display: flex;
-          gap: 4rem;
-        }
-        .logo {
-          width: 16rem;
-          height: 4.8rem;
-          margin-top: 1.6rem;
-        }
-
-        .navbar-box {
-          display: flex;
-          flex-direction: row;
-        }
-
-        .navbar-menu {
-          display: none;
-        }
-
-        .navbar-list {
-          display: flex;
-          margin-top: 2.8rem;
-          gap: 4rem;
-
-          a {
-            color: $white;
-            font-size: 1.6rem;
-            font-size: none;
-            font-weight: 600;
-            line-height: 2.4rem;
-            font-family: "Inter", sans-serif;
-          }
-          .dropdown {
-            margin-left: 1rem;
-          }
-        }
-
-        .navbar-resource {
-          margin-top: 2.8rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-left: 34.1rem;
-          position: absolute;
-
-          a {
-            color: $white;
-            font-size: 1.6rem;
-            font-size: none;
-            font-weight: 600;
-            line-height: 2.4rem;
-            font-family: "Inter", sans-serif;
+          width: 100%;
+          position: relative;
+          .main-logo {
+            display: flex;
+            align-items: center;
+            .logo {
+              width: 16rem;
+              height: 4.8rem;
+              margin-top: 1.6rem;
+              margin-right: 4rem;
+            }
           }
 
-          .dropdown {
-            background: none;
-            border: none;
-            margin-left: 0.8rem;
+          .nav-menu-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.8rem;
+            width: 65%;
+            .navbar-menu {
+              display: none;
+            }
 
-            i {
-              color: $white;
-              font-size: 1.6rem;
+            .navbar-list {
+              display: flex;
+              text-align: center;
+              justify-content: space-around;
+              gap: 4rem;
+              margin-right: 40rem;
+              padding-right: 6rem;
+              a {
+                color: $white;
+                font-size: 1.6rem;
+                font-size: none;
+                font-weight: 600;
+                line-height: 2.4rem;
+                font-family: "Inter", sans-serif;
+              }
+              .dropdown {
+                margin-left: 1rem;
+              }
+            }
+
+            .navbar-resource {
+              display: flex;
+              justify-content: center;
+              position: absolute;
+              .res-link {
+                a {
+                  color: $white;
+                  font-size: 1.6rem;
+                  font-size: none;
+                  font-weight: 600;
+                  line-height: 2.4rem;
+                  font-family: "Inter", sans-serif;
+                  margin-left: 4rem;
+                }
+              }
+              .dropdown {
+                background: none;
+                border: none;
+                margin-left: 0.8rem;
+
+                i {
+                  color: $white;
+                  font-size: 1.6rem;
+                }
+              }
             }
           }
         }
 
-        .search {
-          width: 2rem;
-          height: 2rem;
-          color: $white;
-          margin-top: 3rem;
-          margin-left: -4rem;
-          font-size: 1.6rem;
-          background: none;
-          border: none;
-          position: absolute;
+        .nav-right {
+          .searchbtn {
+            display: flex;
+            align-items: center;
+            width: auto;
+            .search {
+              width: 2rem;
+              height: 2rem;
+              color: $white;
+              margin-top: 3rem;
+              margin-left: -4rem;
+              font-size: 1.6rem;
+              background: none;
+              border: none;
+              position: absolute;
+            }
+          }
         }
       }
     }
@@ -545,17 +563,16 @@ header {
           display: flex;
           flex-direction: row;
           gap: 1.9rem;
-          padding-top: 1.9rem;
+          margin-top: 1.9rem;
           justify-content: center;
 
           .card {
             border-radius: 2rem;
             background: #f9f9ff;
             width: 24.79vw;
+            height: auto;
 
             .card-container {
-              height: 47rem;
-
               .pic {
                 width: 21.88vw;
                 height: auto;
@@ -605,7 +622,8 @@ header {
                 background: none;
                 padding-left: 2rem;
                 padding-top: 1.7rem;
-
+                padding-bottom: 2.3rem;
+               
                 a {
                   font-family: "DM Sans", sans-serif;
                   font-size: 1.6rem;
@@ -700,9 +718,9 @@ header {
             display: flex;
             gap: 0.86rem;
 
-            .reparing-tool ,
+            .reparing-tool,
             .document,
-            .checked{
+            .checked {
               width: 6.5rem;
               height: 6.5rem;
               border-radius: 1.8191rem;
@@ -715,21 +733,21 @@ header {
                 color: #a276ff;
               }
             }
-            .document{
+            .document {
               margin-bottom: 5.7rem;
-              i{
-                background: #F3F6FF;
+              i {
+                background: #f3f6ff;
                 color: #7291ff;
                 padding-inline: 2.5rem;
               }
             }
 
-            .checked{
+            .checked {
               margin-bottom: 5.7rem;
-              i{
-                color: #FF5400;
-                background: #FAE6E0;
-                padding-inline:2.1rem;
+              i {
+                color: #ff5400;
+                background: #fae6e0;
+                padding-inline: 2.1rem;
               }
             }
 
@@ -740,7 +758,7 @@ header {
               font-weight: 400;
               line-height: 2.7rem;
               padding-top: 2rem;
-              padding-left: .864rem;
+              padding-left: 0.864rem;
             }
           }
 

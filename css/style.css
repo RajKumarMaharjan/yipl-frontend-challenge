@@ -44,6 +44,12 @@ p {
   margin: 0 auto;
 }
 
+@media (max-width: 1600px) {
+  html {
+    font-size: 70%;
+    font-weight: 70%;
+  }
+}
 @media (max-width: 1024px) {
   html {
     font-size: 55%;
@@ -85,49 +91,45 @@ header .hero .head-box {
 }
 header .hero .head-box .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 header .hero .head-box .navbar .nav-left {
   display: flex;
-  gap: 4rem;
+  width: 100%;
+  position: relative;
 }
-header .hero .head-box .navbar .logo {
+header .hero .head-box .navbar .nav-left .main-logo {
+  display: flex;
+  align-items: center;
+}
+header .hero .head-box .navbar .nav-left .main-logo .logo {
   width: 16rem;
   height: 4.8rem;
   margin-top: 1.6rem;
+  margin-right: 4rem;
 }
-header .hero .head-box .navbar .navbar-box {
+header .hero .head-box .navbar .nav-left .nav-menu-list {
   display: flex;
   flex-direction: row;
-}
-header .hero .head-box .navbar .navbar-menu {
-  display: none;
-}
-header .hero .head-box .navbar .navbar-list {
-  display: flex;
-  margin-top: 2.8rem;
-  gap: 4rem;
-}
-header .hero .head-box .navbar .navbar-list a {
-  color: #FFF;
-  font-size: 1.6rem;
-  font-size: none;
-  font-weight: 600;
-  line-height: 2.4rem;
-  font-family: "Inter", sans-serif;
-}
-header .hero .head-box .navbar .navbar-list .dropdown {
-  margin-left: 1rem;
-}
-header .hero .head-box .navbar .navbar-resource {
-  margin-top: 2.8rem;
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 34.1rem;
-  position: absolute;
+  margin-top: 1.8rem;
+  width: 65%;
 }
-header .hero .head-box .navbar .navbar-resource a {
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-menu {
+  display: none;
+}
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-list {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  gap: 4rem;
+  margin-right: 40rem;
+  padding-right: 6rem;
+}
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-list a {
   color: #FFF;
   font-size: 1.6rem;
   font-size: none;
@@ -135,16 +137,38 @@ header .hero .head-box .navbar .navbar-resource a {
   line-height: 2.4rem;
   font-family: "Inter", sans-serif;
 }
-header .hero .head-box .navbar .navbar-resource .dropdown {
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-list .dropdown {
+  margin-left: 1rem;
+}
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .res-link a {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-size: none;
+  font-weight: 600;
+  line-height: 2.4rem;
+  font-family: "Inter", sans-serif;
+  margin-left: 4rem;
+}
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .dropdown {
   background: none;
   border: none;
   margin-left: 0.8rem;
 }
-header .hero .head-box .navbar .navbar-resource .dropdown i {
+header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .dropdown i {
   color: #FFF;
   font-size: 1.6rem;
 }
-header .hero .head-box .navbar .search {
+header .hero .head-box .navbar .nav-right .searchbtn {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+header .hero .head-box .navbar .nav-right .searchbtn .search {
   width: 2rem;
   height: 2rem;
   color: #FFF;
@@ -531,16 +555,14 @@ header .content .btn i {
   display: flex;
   flex-direction: row;
   gap: 1.9rem;
-  padding-top: 1.9rem;
+  margin-top: 1.9rem;
   justify-content: center;
 }
 .news .wrapper .container .items .row .card {
   border-radius: 2rem;
   background: #f9f9ff;
   width: 24.79vw;
-}
-.news .wrapper .container .items .row .card .card-container {
-  height: 47rem;
+  height: auto;
 }
 .news .wrapper .container .items .row .card .card-container .pic {
   width: 21.88vw;
@@ -583,6 +605,7 @@ header .content .btn i {
   background: none;
   padding-left: 2rem;
   padding-top: 1.7rem;
+  padding-bottom: 2.3rem;
 }
 .news .wrapper .container .items .row .card .card-container .link a {
   font-family: "DM Sans", sans-serif;
@@ -700,7 +723,7 @@ header .content .btn i {
 .Resources .wrapper .items .item-row .card .tool .document i,
 .Resources .wrapper .items .item-row .card-2 .tool .document i,
 .Resources .wrapper .items .item-row .card-3 .tool .document i {
-  background: #F3F6FF;
+  background: #f3f6ff;
   color: #7291ff;
   padding-inline: 2.5rem;
 }
@@ -712,8 +735,8 @@ header .content .btn i {
 .Resources .wrapper .items .item-row .card .tool .checked i,
 .Resources .wrapper .items .item-row .card-2 .tool .checked i,
 .Resources .wrapper .items .item-row .card-3 .tool .checked i {
-  color: #FF5400;
-  background: #FAE6E0;
+  color: #ff5400;
+  background: #fae6e0;
   padding-inline: 2.1rem;
 }
 .Resources .wrapper .items .item-row .card .tool .tool-text,
