@@ -130,11 +130,14 @@ header {
         }
       }
     }
+    .search-box-position {
+      display: flex;
+      justify-content: center;
+    }
     .search-bar {
       padding-top: 10rem;
       position: absolute;
-      left: 32%;
-      
+
       .search-box {
         display: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -159,7 +162,7 @@ header {
             color: #62696f;
             width: 57.6rem;
           }
-          .search-icon{
+          .search-icon {
             font-size: 1.6rem;
             color: #62696f;
             padding-right: 0.8rem;
@@ -295,24 +298,29 @@ header {
     }
   }
 }
-.scroll-Top {
-  position: fixed;
-  margin-top: 13.8rem;
-  right: 10rem;
+.scroll-to-top{
+  float: right;
+  margin-right: 8rem;
+ 
+.scroll{
+    position: absolute;
   z-index: 99;
-}
-
-.scroll-Top .btn {
-  background: #fff;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-}
-
-.scroll-Top .btn i {
-  font-size: 1.6rem;
-  padding: 1rem 1.2rem;
-  color: $resource_gray;
+   .scroll-Top{
+     margin-top:-0.6rem;
+     position: fixed;
+     .btn {
+       border-radius:50%;
+       background: #fff;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+       border: none;
+       display: none;
+       i{
+         padding: 1rem 1.2rem;
+         color: #7C7D82;
+       }
+     }
+   }
+ }
 }
 .Features-Campaigns {
   background: #f9f9ff;
@@ -962,6 +970,7 @@ header {
 footer {
   .footer-group {
     width: 100%;
+    position: relative;
     .bg-img {
       img {
         width: 100%;
@@ -1083,14 +1092,13 @@ footer {
 
   .copyright {
     background: #f9f9ff;
-
     .copyright-warpper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding: 3.2rem 16.4rem;
       .text {
-        P {
+         p{
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 2.1rem;
@@ -1098,12 +1106,19 @@ footer {
           text-align: center;
         }
       }
-      .cc-logo {
-        img {
-          width: 7.293vw;
-          height: 2.5rem;
+      .copyright-right {
+        display: flex;
+        justify-content: space-around;
+        
+        .cc-logo {
+          img {
+            width: 7.293vw;
+            height: 2.5rem;
+          }
         }
       }
     }
+
   }
 }
+
