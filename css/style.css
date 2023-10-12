@@ -328,7 +328,7 @@ header .content .btn i {
   z-index: 99;
 }
 .scroll-to-top .scroll .scroll-Top {
-  margin-top: -0.6rem;
+  margin-top: 3.6rem;
   position: fixed;
 }
 .scroll-to-top .scroll .scroll-Top .btn {
@@ -340,7 +340,7 @@ header .content .btn i {
 }
 .scroll-to-top .scroll .scroll-Top .btn i {
   padding: 1rem 1.2rem;
-  color: #7C7D82;
+  color: #7c7d82;
 }
 
 .Features-Campaigns {
@@ -420,13 +420,12 @@ header .content .btn i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2.4rem;
   margin-top: 9.6rem;
   margin-bottom: 9.6rem;
 }
 .Features-profiles .row .content {
-  width: 36rem;
-  padding-right: 2.1rem;
+  width: 36.8rem;
+  margin-right: 6.4rem;
 }
 .Features-profiles .row .content h2 {
   color: #24272E;
@@ -467,8 +466,6 @@ header .content .btn i {
 .Features-profiles .row .profile-pic-right .profile-pic,
 .Features-profiles .row .profile-pic-right .profile-pic-1 {
   overflow: hidden;
-  width: 22.78vw;
-  height: 41.5rem;
 }
 .Features-profiles .row .profile-pic-left .profile-pic .pic,
 .Features-profiles .row .profile-pic-left .profile-pic-1 .pic,
@@ -476,10 +473,10 @@ header .content .btn i {
 .Features-profiles .row .profile-pic-right .profile-pic-1 .pic {
   display: flex;
   overflow: hidden;
-  width: 22.78vw;
+  width: 32.8rem;
   height: 41.5rem;
   border-radius: 1.6rem;
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background: lightgray 50%/cover no-repeat;
   align-items: center;
   justify-content: center;
   transition: 1s ease-in-out;
@@ -490,13 +487,6 @@ header .content .btn i {
 .Features-profiles .row .profile-pic-right .profile-pic-1 .pic:hover {
   transform: scale(1.2);
 }
-.Features-profiles .row .profile-pic-left .profile-pic .pic img,
-.Features-profiles .row .profile-pic-left .profile-pic-1 .pic img,
-.Features-profiles .row .profile-pic-right .profile-pic .pic img,
-.Features-profiles .row .profile-pic-right .profile-pic-1 .pic img {
-  width: 51.8rem;
-  height: 41.5rem;
-}
 .Features-profiles .row .profile-pic-left .profile-pic h3,
 .Features-profiles .row .profile-pic-left .profile-pic-1 h3,
 .Features-profiles .row .profile-pic-right .profile-pic h3,
@@ -506,16 +496,26 @@ header .content .btn i {
   font-style: normal;
   font-weight: 600;
   color: #24272E;
-  padding-top: 2.4rem;
-  padding-bottom: 4rem;
   position: absolute;
+  margin-top: 2.4rem;
 }
 .Features-profiles .row .profile-pic-left .profile-pic-1,
 .Features-profiles .row .profile-pic-right .profile-pic-1 {
-  margin-top: 6.8rem;
+  margin-top: 9.6rem;
+}
+.Features-profiles .row .profile-pic-left .profile-pic-1 img,
+.Features-profiles .row .profile-pic-right .profile-pic-1 img {
+  width: 100%;
+}
+.Features-profiles .row .profile-pic-left .profile-pic .pic img,
+.Features-profiles .row .profile-pic-right .profile-pic .pic img {
+  width: 191%;
 }
 .Features-profiles .row .profile-pic-right {
   margin-top: 14rem;
+}
+.Features-profiles .row .profile-pic-left {
+  margin-right: 3.2rem;
 }
 
 .who-we-are {
