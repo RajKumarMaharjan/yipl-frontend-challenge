@@ -48,8 +48,8 @@ Before you begin, ensure you have met the following requirements:
 
     2.Access the web application at
     click in Go live
-## Technologies Used
-    Node.js
+## Technologies Uses
+
     HTML
     Sass
     JavaScript
