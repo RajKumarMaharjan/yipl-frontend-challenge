@@ -2,7 +2,8 @@
 
 ### Catalog
 
-** Project Overview **
+###Project Overview
+
 This ia a web design project that utilizes Node.js for server-sides scripting, HTML for structuring web pages, Sass for styling, and JavaScript for interactivey. 
 
 ## Table of Contents
