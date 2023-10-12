@@ -1,9 +1,17 @@
-{"scripts": {
-  "watch": "node-sass -w css/style.scss css/style.css",
-  "build": "node-sass -w css/style.scss css/style.css",
-  "sass": "sass css/style.scss css/style.css"
-},
+{
+
   "dependencies": {
+    "express": "^4.18.2",
     "node-sass": "^9.0.0"
-  }
+  },
+  "scripts": {
+    "watch": "node-sass -w css/style.scss css/style.css"
+  },
+  "name": "catalog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
