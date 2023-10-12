@@ -7,9 +7,6 @@ This ia a web design project that utilizes Node.js for server-sides scripting, H
 
 ## Table of Contents
 > Getting Started
-
-  <sub>Prerequisites</sub>
-  <sub>Installation</sub>
   
 > Project Structure
 
