@@ -434,6 +434,7 @@ header .content .btn i {
   font-style: normal;
   line-height: 4rem;
   align-self: stretch;
+  margin-bottom: 2rem;
 }
 .Features-profiles .row .content .supporting-text {
   color: #24272E;
@@ -1013,11 +1014,11 @@ footer .footer-group .footer-wrapper .footer-content .footer-left .social-media 
   color: #3a3d43;
   background: #ffffff;
   font-size: 2rem;
-  padding: 0.7rem 0.8rem;
+  padding: 0.83rem 0.96rem;
   border-radius: 50%;
 }
 footer .footer-group .footer-wrapper .footer-content .footer-left .social-media .In-icon {
-  padding: 0.7rem 1rem;
+  padding: 0.8rem 1rem;
 }
 footer .footer-group .footer-wrapper .footer-content .footer-left .social-media .youtube-icon {
   padding: 0.8rem;
