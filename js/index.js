@@ -38,10 +38,10 @@ window.addEventListener("scroll", toggleScrollToTopButton);
 ScrollToTopButton.addEventListener("click", scrollToTop);
 
 function toggleScrollToTopButton() {
-  if (window.scrollY > 300) {
-    ScrollToTopButton.style.display = "block";
-  } else {
+  if (window.scrollY <300) {
     ScrollToTopButton.style.display = "none";
+  } else {
+    ScrollToTopButton.style.display = "block";
   }
 }
 

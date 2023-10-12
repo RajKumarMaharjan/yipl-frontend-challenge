@@ -44,12 +44,6 @@ p {
   margin: 0 auto;
 }
 
-@media (max-width: 1600px) {
-  html {
-    font-size: 70%;
-    font-weight: 70%;
-  }
-}
 @media (max-width: 1024px) {
   html {
     font-size: 55%;
@@ -179,34 +173,37 @@ header .hero .head-box .navbar .nav-right .searchbtn .search {
   border: none;
   position: absolute;
 }
-header .hero .search-box {
-  display: none;
-}
-header .hero .search-box .search-input {
-  display: flex;
-  gap: 0.8rem;
-  flex: 1 0 0;
+header .hero .search-bar {
+  padding-top: 10rem;
   position: absolute;
-  top: 13.7rem;
-  left: 40rem;
-  width: 64rem;
-  padding: 1.6rem;
+  left: 32%;
+}
+header .hero .search-bar .search-box {
+  display: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 126.25%), #fff;
   box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
 }
-header .hero .search-box .search-input input {
+header .hero .search-bar .search-box .search-input {
+  padding: 1.6rem;
+}
+header .hero .search-bar .search-box .search-input input {
   border: none;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  width: 55rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #62696f;
+  width: 57.6rem;
 }
-header .hero .search-box .search-input .search-icon {
+header .hero .search-bar .search-box .search-input .search-icon {
   font-size: 1.6rem;
-  color: #62696F;
+  color: #62696f;
+  padding-right: 0.8rem;
 }
-header .hero .search-box .search-input .close-btn {
-  display: flex;
+header .hero .search-bar .search-box .search-input .close-btn {
   border: 0.1rem solid rgba(245, 245, 245, 0.9607843137);
   background-color: rgba(245, 245, 245, 0.9607843137);
   width: 2rem;
@@ -216,10 +213,9 @@ header .hero .search-box .search-input .close-btn {
   align-items: center;
   font-size: 2rem;
   font-weight: 100;
-  padding-left: 0.1rem;
   position: absolute;
-  top: -1.4rem;
-  right: -1.8rem;
+  margin-left: 2.2rem;
+  margin-top: -3.4rem;
 }
 header .hero .dropdown-menu {
   display: none;
@@ -323,9 +319,8 @@ header .content .btn i {
 .scroll-Top {
   position: fixed;
   margin-top: 13.8rem;
-  right: 2.25rem;
+  right: 10rem;
   z-index: 99;
-  cursor: pointer;
 }
 
 .scroll-Top .btn {
