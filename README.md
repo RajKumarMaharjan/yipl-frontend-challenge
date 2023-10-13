@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Catalog
 
 ### Project Overview
@@ -64,6 +65,15 @@ This ia a web design project that utilizes Node.js for server-sides scripting, H
 
 ## Project Overview
 This ia a web design project that utilizes Node.js for server-sides scripting, HTML for structuring web pages, Sass for styling, and JavaScript for interactivey. 
+=======
+## yipl-frontend-Challange
+
+
+## Catalog
+
+## Project Overview
+This ia a web design project that utilizes HTML for structuring web pages, Sass for styling, and JavaScript for interactivey. 
+>>>>>>> a24712ab46a7db5792b0f269f59f426e5deb597a
 
 
 ## Table of Contents
@@ -103,6 +113,7 @@ Before you begin, ensure you have met the following requirements:
 ## Usage
     1.Start the development server:
    `npm run watch` OR click on watch sass on buttom
+<<<<<<< HEAD
 >>>>>>> ede2c08 (update folder stracture)
 
     2.Access the web application at
@@ -112,3 +123,13 @@ Before you begin, ensure you have met the following requirements:
     HTML
     Sass
     JavaScript
+=======
+
+    2.Access the web application at
+    click in Go live
+## Technologies Uses
+
+    HTML
+    Sass
+    JavaScript
+>>>>>>> a24712ab46a7db5792b0f269f59f426e5deb597a
