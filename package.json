@@ -1,17 +1,34 @@
 {
 
   "dependencies": {
-    "express": "^4.18.2",
+
+    "live-server": "^1.2.2",
+
     "node-sass": "^9.0.0"
+
   },
+
   "scripts": {
-    "watch": "node-sass -w css/style.scss css/style.css"
+
+    "watch": "node-sass -w resources/styles/style.scss resources/styles/style.css",
+
+    "build": "node-sass resources/styles/style.scss -o resources/styles",
+
+    "start": "live-server"
+
   },
+
   "name": "catalog",
+
   "version": "1.0.0",
+
   "main": "index.js",
-  "devDependencies": {},
+
   "author": "",
+
   "license": "ISC",
+
   "description": ""
+
 }
+
