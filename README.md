@@ -19,7 +19,7 @@ This ia a web design project that utilizes HTML for structuring web pages, Sass 
 
 # Prerequisites
 Before you begin, ensure you have met the following requirements:
-    Node.js installed
+    node installed
     Git installed
     Install live server in code app extensions
     Install live Sass Complier in code app extensions
