@@ -281,6 +281,7 @@ header {
       margin-top: 4.8rem;
       &:hover {
         border: 0.1rem solid #fff;
+        background:#847d42 ;
       }
 
       .action {
@@ -400,6 +401,9 @@ header {
               font-family: "DM Sans", sans-serif;
               line-height: 2.7rem;
               color: $blue;
+              &:hover{
+                color: #68a1d6;
+              }
             }
           }
         }
@@ -451,6 +455,9 @@ header {
 
         a {
           color: $blue;
+          &:hover{
+            color: #68a1d6;
+          }
         }
       }
 
@@ -667,6 +674,9 @@ header {
                   font-weight: 700;
                   line-height: 2.4rem;
                   color: $blue;
+                  &:hover{
+                    color: #68a1d6;
+                  }
                 }
 
                 .arrow {
@@ -697,6 +707,21 @@ header {
           font-style: normal;
           color: $black;
           background: none;
+          &:hover{
+            cursor: pointer;
+            animation: bounce 1s;
+            @keyframes bounce {
+              0%, 20%, 50%, 80%, 100%{
+                transform:translateY(0);
+              }
+              40%{
+                transform: translateY(-2rem);
+              }
+              60%{
+                transform: translateY(-1rem);
+              }
+            }
+          }
         }
       }
     }
@@ -846,6 +871,9 @@ header {
               font-weight: 700;
               line-height: 2.4rem;
               color: $blue;
+              &:hover{
+                color: #68a1d6;
+              }
             }
 
             .arrow {
@@ -871,6 +899,22 @@ header {
         border-radius: 0.4rem;
         padding: 1rem 1.6rem;
         gap: 1rem;
+        &:hover{
+          cursor: pointer;
+          background: #d3e1ea;
+          animation: bounce 1s ;
+          @keyframes bounce {
+            0%, 20%, 50%, 80%, 100%{
+              transform:translateX(0);
+            }
+            40%{
+              transform: translateX(-2rem);
+            }
+            60%{
+              transform: translateX(-1rem);
+            }
+          }
+        }
       }
     }
   }
@@ -978,6 +1022,11 @@ header {
           font-weight: 700;
           line-height: 2.4rem;
           padding: 1rem 1.6rem;
+          &:hover{
+            color: #fff;
+            background: $blue;
+
+          }
         }
       }
     }

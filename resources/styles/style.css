@@ -306,6 +306,7 @@ header .content .btn {
 }
 header .content .btn:hover {
   border: 0.1rem solid #fff;
+  background: #847d42;
 }
 header .content .btn .action {
   font-size: 1.8rem;
@@ -416,6 +417,9 @@ header .content .btn i {
   line-height: 2.7rem;
   color: #1D6FA3;
 }
+.features-campaigns .container .row .campaigns-card .card-text .link a:hover {
+  color: #68a1d6;
+}
 
 .features-profiles .row {
   display: flex;
@@ -458,6 +462,9 @@ header .content .btn i {
 }
 .features-profiles .row .content .link a {
   color: #1D6FA3;
+}
+.features-profiles .row .content .link a:hover {
+  color: #68a1d6;
 }
 .features-profiles .row .content .arrow {
   padding-left: 0.6rem;
@@ -651,6 +658,9 @@ header .content .btn i {
   line-height: 2.4rem;
   color: #1D6FA3;
 }
+.news .wrapper .container .items .row .card .card-container .link a:hover {
+  color: #68a1d6;
+}
 .news .wrapper .container .items .row .card .card-container .link .arrow {
   padding-left: 0.6rem;
   padding-top: 0.6rem;
@@ -673,6 +683,21 @@ header .content .btn i {
   font-style: normal;
   color: #24272E;
   background: none;
+}
+.news .wrapper .container .viewBtn button:hover {
+  cursor: pointer;
+  animation: bounce 1s;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2rem);
+  }
+  60% {
+    transform: translateY(-1rem);
+  }
 }
 
 .resources {
@@ -843,6 +868,11 @@ header .content .btn i {
   line-height: 2.4rem;
   color: #1D6FA3;
 }
+.resources .wrapper .items .item-row .card .link a:hover,
+.resources .wrapper .items .item-row .card-2 .link a:hover,
+.resources .wrapper .items .item-row .card-3 .link a:hover {
+  color: #68a1d6;
+}
 .resources .wrapper .items .item-row .card .link .arrow,
 .resources .wrapper .items .item-row .card-2 .link .arrow,
 .resources .wrapper .items .item-row .card-3 .link .arrow {
@@ -863,6 +893,22 @@ header .content .btn i {
   border-radius: 0.4rem;
   padding: 1rem 1.6rem;
   gap: 1rem;
+}
+.resources .wrapper .btn button:hover {
+  cursor: pointer;
+  background: #d3e1ea;
+  animation: bounce 1s;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-2rem);
+  }
+  60% {
+    transform: translateX(-1rem);
+  }
 }
 
 .contact-us {
@@ -959,6 +1005,10 @@ header .content .btn i {
   font-weight: 700;
   line-height: 2.4rem;
   padding: 1rem 1.6rem;
+}
+.contact-us .wrapper .contact-form .btn button:hover {
+  color: #fff;
+  background: #1D6FA3;
 }
 
 footer .footer-group {
