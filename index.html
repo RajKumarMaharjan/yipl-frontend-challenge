@@ -74,37 +74,37 @@
                 </div>
             </div>
             <div class="search-box-position">
-            <div class="search-bar">
-            <div class="search-box" id="search-box">
-                <div class="search-input" id="search-input">
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input type="text" name="search" placeholder="search">
-                    <button onclick="toggleInput()" class="close-btn" id="closed-btn">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+                <div class="search-bar">
+                    <div class="search-box" id="search-box">
+                        <div class="search-input" id="search-input">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" name="search" placeholder="search">
+                            <button onclick="toggleInput()" class="close-btn" id="closed-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
             <div class="dropdown-menu" id="dropdown-menu">
                 <ul class="dropdown-list">
                     <li class="dropdown-link">
                         <i class="fa-solid fa-book"></i>
-                        <a href="#" >
+                        <a href="#">
                             <h4>Blog</h4>
                             <p>The latest industry news, updates and info.</p>
                         </a>
                     </li>
                     <li class="dropdown-link">
                         <i class="fa-solid fa-bolt"></i>
-                        <a href="#" >
+                        <a href="#">
                             <h4>Customer stories</h4>
                             <p>Learn how our customers are making big changes.</p>
                         </a>
                     </li>
                     <li class="dropdown-link">
                         <i class="fa-regular fa-circle-play"></i>
-                        <a href="#" >
+                        <a href="#">
                             <h4>Video tutorials</h4>
                             <p>Get up and running on new features and techniques.</p>
                         </a>
@@ -121,7 +121,7 @@
                         users. Trusted by over 4,000 startups.
                     </p>
                 </div>
-                <button class="btn">
+                <button class="btn" id="scrollToContact">
                     <span class="action">Why Catalog?</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
@@ -130,13 +130,13 @@
         </div>
     </header>
     <div class="scroll-to-top">
-    <div class="scroll">
-        <div class="scroll-Top">
-            <button class="btn" id="ScrollToTop">
-                <i class="fa-solid fa-arrow-up"></i>
-            </button>
+        <div class="scroll">
+            <div class="scroll-Top">
+                <button class="btn" id="ScrollToTop">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
         </div>
-    </div>
     </div>
     <section class="features-campaigns">
         <div class="container">
@@ -164,7 +164,7 @@
                             that European funds In view of Russia’s military action against the Ukrainian people,
                         </p>
                         <div class="link">
-                            <a href="#" >
+                            <a href="#">
                                 Learn more <samp><i class="fa-solid fa-arrow-right"></i></samp>
                             </a>
                         </div>
@@ -446,7 +446,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="viewBtn">
+                    <div class="viewBtn" id="scrollToResources">
                         <button>
                             View all news
                         </button>
@@ -455,7 +455,7 @@
             </div>
         </div>
     </section>
-    <section class="resources">
+    <section class="resources" id="resources">
         <div class="wrapper">
             <div class="heading-content">
                 <h2>
@@ -486,7 +486,7 @@
                             </p>
                         </div>
                         <button class="link">
-                            <a href="#" >
+                            <a href="#">
                                 Learn more
                                 <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                             </a>
@@ -501,11 +501,11 @@
                         <div class="card-text">
                             <p>
                                 It allows creating networks of public spending on goods services used in defense in
-                                28 EU countries 
+                                28 EU countries
                             </p>
                         </div>
                         <button class="link">
-                            <a href="#" >
+                            <a href="#">
                                 Learn more
                                 <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
                             </a>
@@ -521,7 +521,7 @@
                         <div class="card-text">
                             <p>
                                 It allows creating networks of public spending on goods services used in defense in
-                                28 EU countries 
+                                28 EU countries
                             </p>
                         </div>
                         <button class="link">
@@ -540,7 +540,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <div class="wrapper">
             <div class="contatent">
                 <h3>Contact Us</h3>
@@ -551,39 +551,39 @@
                 </div>
             </div>
             <div class="contact-form">
-               
+
                 <form action="#" onsubmit="return validation()">
-                 <div class="form-group">
-                    <div class="name">
-                        <div class="first-name">
-                            <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" class="fname" id="fname">
-                            <span id="fnameError" class="error"></span>
+                    <div class="form-group">
+                        <div class="name">
+                            <div class="first-name">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" class="fname" id="fname">
+                                <span id="fnameError" class="error"></span>
+                            </div>
+                            <div class="last-name">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" class="lname" id="lname">
+                                <span id="lnameError" class="error"></span>
+                            </div>
                         </div>
-                        <div class="last-name">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" class="lname" id="lname" >
-                            <span id="lnameError" class="error"></span>
+                        <div class="email">
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" class="email-id" id="email">
+                            <span id="email-error" class="error"></span>
+                        </div>
+                        <div class="message">
+                            <label for="textarea">Message</label>
+                            <textarea name="message" cols="30" rows="7" class="text" id="message"></textarea>
+                            <span id="message-error" class="error"></span>
                         </div>
                     </div>
-                    <div class="email">
-                        <label for="Email">Email</label>
-                        <input type="email" name="email" class="email-id" id="email" >
-                        <span id="email-error" class="error"></span>
+                    <div class="form-control">
+                        <button type="submit">
+                            Submit
+                        </button>
                     </div>
-                    <div class="message">
-                        <label for="textarea">Message</label>
-                        <textarea name="message" cols="30" rows="7" class="text" id="message" ></textarea>
-                        <span id="message-error" class="error"></span>
-                    </div>
-                 </div>
-                 <div class="form-control">
-                    <button type="submit">
-                        Submit
-                    </button>
-                </div>
                 </form>
-                
+
             </div>
         </div>
     </section>
@@ -600,8 +600,10 @@
                 <div class="footer-content ">
                     <div class="footer-left">
                         <div class="logo">
-                            <img src="./resources/public/Image/footer-logo/Logomark.png" alt="Logomark" class="logomark">
-                            <img src="./resources/public/Image/footer-logo/Logotype.png" alt="Logotype" class="logotype">
+                            <img src="./resources/public/Image/footer-logo/Logomark.png" alt="Logomark"
+                                class="logomark">
+                            <img src="./resources/public/Image/footer-logo/Logotype.png" alt="Logotype"
+                                class="logotype">
                         </div>
                         <div class="para-text">
                             <p>
@@ -712,8 +714,8 @@
                 </div>
                 <div class="copyright-right">
                     <div class="cc-logo">
-                    <img src="./resources/public/Image/cc-logo.png" alt="copyright-logo">
-                </div>
+                        <img src="./resources/public/Image/cc-logo.png" alt="copyright-logo">
+                    </div>
                 </div>
             </div>
         </div>
@@ -730,6 +732,7 @@
     <script src="./resources/scripts/index.js"></script>
     <script src="./resources/scripts/carousel.js"></script>
     <script src="./resources/scripts/form.js"></script>
+    <script src="./resources/scripts/button.js"></script>
     <script src="https://kit.fontawesome.com/5e83a2806e.js" crossorigin="anonymous"></script>
 </body>
 
