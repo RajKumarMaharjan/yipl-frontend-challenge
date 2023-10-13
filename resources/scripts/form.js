@@ -27,14 +27,11 @@ function validation(){
         return false;
     };
     
-    if(message.length < 200){
+    if(message.length < 50){
 
         document.getElementById('message-error').innerHTML ="Your Message should be 200 word"
 
         return false;
     };
-    
-
-
-
+   
 }
