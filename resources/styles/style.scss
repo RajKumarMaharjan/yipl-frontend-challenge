@@ -323,10 +323,10 @@ header {
     }
   }
 }
-.Features-Campaigns {
+.features-campaigns {
   background: #f9f9ff;
   .container {
-    .Campaigns {
+    .campaigns {
       h1 {
         font-size: 3.2rem;
         font-weight: 600;
@@ -407,7 +407,7 @@ header {
     }
   }
 }
-.Features-profiles {
+.features-profiles {
   .row {
     display: flex;
     flex-direction: row;
@@ -703,7 +703,7 @@ header {
   }
 }
 
-.Resources {
+.resources {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -876,7 +876,7 @@ header {
   }
 }
 
-.Contact-us {
+.contact-us {
   margin-inline: center;
   .wrapper {
     padding: 8rem;
@@ -1114,13 +1114,14 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       padding: 3.2rem 16.4rem;
-      .text {
+      .terms {
         p {
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 2.1rem;
           color: $resource_gray;
           text-align: center;
+          font-feature-settings: 'clig' off, 'liga' off;
         }
       }
       .copyright-right {
@@ -1130,7 +1131,7 @@ footer {
         .cc-logo {
           img {
             width: 7.293vw;
-            height: 2.5rem;
+            height: auto;
           }
         }
       }

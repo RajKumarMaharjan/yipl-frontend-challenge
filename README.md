@@ -23,7 +23,7 @@ This is a web design project that utilizes HTML for structuring web pages, Sass 
 
 <sub> Before you begin, ensure you have met the following requirements:</sub>
 
-> Git installed `https://desktop.github.com/`
+> Git installed `https://git-scm.com/`
 
 
 ## Installation
@@ -34,7 +34,7 @@ This is a web design project that utilizes HTML for structuring web pages, Sass 
 
 2. Navigate to the project directory:
 
-   `cd Catalog`
+   `cd yipl-frontend-challenge`
 
 3. Install project dependencies:
 
