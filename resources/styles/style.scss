@@ -707,22 +707,24 @@ header {
           font-style: normal;
           color: $black;
           background: none;
-          &:hover{
-            cursor: pointer;
-            animation: bounce 1s;
-            @keyframes bounce {
-              0%, 20%, 50%, 80%, 100%{
-                transform:translateY(0);
-              }
-              40%{
-                transform: translateY(-2rem);
-              }
-              60%{
-                transform: translateY(-1rem);
-              }
+            &:hover{
+          cursor: pointer;
+          background-color:#d3e1ea ;
+          animation: bounce 1s;
+          @keyframes bounce {
+            0%, 20%, 50%, 80%, 100%{
+              transform:translateY(0);
+            }
+            40%{
+              transform: translateY(-2rem);
+            }
+            60%{
+              transform: translateY(-1rem);
             }
           }
         }
+        }
+      
       }
     }
   }
@@ -885,7 +887,7 @@ header {
       }
     }
 
-    .btn {
+    .view-btn{
       padding-top: 4.2rem;
 
       button {
@@ -902,16 +904,16 @@ header {
         &:hover{
           cursor: pointer;
           background: #d3e1ea;
-          animation: bounce 1s ;
+          animation: bounce 2s ;
           @keyframes bounce {
             0%, 20%, 50%, 80%, 100%{
-              transform:translateX(0);
+              transform:translateY(0);
             }
             40%{
-              transform: translateX(-2rem);
+              transform: translateY(-2rem);
             }
             60%{
-              transform: translateX(-1rem);
+              transform: translateY(-1rem);
             }
           }
         }
@@ -1003,9 +1005,20 @@ header {
             width: 38.19vw;
           }
         }
+        .error{
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: red;
+
+        }
+        #email-error,
+        #message-error{
+          display: flex;
+          justify-content: start;
+        }
       }
 
-      .btn {
+      .form-control {
         padding-top: 3.2rem;
         display: flex;
         justify-content: center;

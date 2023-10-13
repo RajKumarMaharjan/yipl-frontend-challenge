@@ -686,6 +686,7 @@ header .content .btn i {
 }
 .news .wrapper .container .viewBtn button:hover {
   cursor: pointer;
+  background-color: #d3e1ea;
   animation: bounce 1s;
 }
 @keyframes bounce {
@@ -879,10 +880,10 @@ header .content .btn i {
   padding-left: 0.6rem;
   padding-top: 0.6rem;
 }
-.resources .wrapper .btn {
+.resources .wrapper .view-btn {
   padding-top: 4.2rem;
 }
-.resources .wrapper .btn button {
+.resources .wrapper .view-btn button {
   background: none;
   border: 0.1rem solid #1D6FA3;
   color: #24272E;
@@ -894,20 +895,20 @@ header .content .btn i {
   padding: 1rem 1.6rem;
   gap: 1rem;
 }
-.resources .wrapper .btn button:hover {
+.resources .wrapper .view-btn button:hover {
   cursor: pointer;
   background: #d3e1ea;
-  animation: bounce 1s;
+  animation: bounce 2s;
 }
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   40% {
-    transform: translateX(-2rem);
+    transform: translateY(-2rem);
   }
   60% {
-    transform: translateX(-1rem);
+    transform: translateY(-1rem);
   }
 }
 
@@ -988,13 +989,23 @@ header .content .btn i {
   gap: 0.8rem;
   width: 38.19vw;
 }
-.contact-us .wrapper .contact-form .btn {
+.contact-us .wrapper .contact-form form .error {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: red;
+}
+.contact-us .wrapper .contact-form form #email-error,
+.contact-us .wrapper .contact-form form #message-error {
+  display: flex;
+  justify-content: start;
+}
+.contact-us .wrapper .contact-form .form-control {
   padding-top: 3.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact-us .wrapper .contact-form .btn button {
+.contact-us .wrapper .contact-form .form-control button {
   border-radius: 0.4rem;
   border: 1px solid #1d6fa3;
   padding: 1rem 1.6rem;
@@ -1006,7 +1017,7 @@ header .content .btn i {
   line-height: 2.4rem;
   padding: 1rem 1.6rem;
 }
-.contact-us .wrapper .contact-form .btn button:hover {
+.contact-us .wrapper .contact-form .form-control button:hover {
   color: #fff;
   background: #1D6FA3;
 }

@@ -533,7 +533,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn">
+            <div class="view-btn">
                 <button>
                     View all resources
                 </button>
@@ -551,31 +551,39 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form>
+               
+                <form action="#" onsubmit="return validation()">
+                 <div class="form-group">
                     <div class="name">
                         <div class="first-name">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" class="fname">
+                            <input type="text" name="firstName" class="fname" id="fname">
+                            <span id="fnameError" class="error"></span>
                         </div>
                         <div class="last-name">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" class="lname">
+                            <input type="text" name="lastName" class="lname" id="lname" >
+                            <span id="lnameError" class="error"></span>
                         </div>
                     </div>
                     <div class="email">
                         <label for="Email">Email</label>
-                        <input type="email" name="email" class="email-id">
+                        <input type="email" name="email" class="email-id" id="email" >
+                        <span id="email-error" class="error"></span>
                     </div>
                     <div class="message">
                         <label for="textarea">Message</label>
-                        <textarea name="message" cols="30" rows="7" class="text"></textarea>
+                        <textarea name="message" cols="30" rows="7" class="text" id="message" ></textarea>
+                        <span id="message-error" class="error"></span>
                     </div>
-                </form>
-                <div class="btn">
-                    <button>
+                 </div>
+                 <div class="form-control">
+                    <button type="submit">
                         Submit
                     </button>
                 </div>
+                </form>
+                
             </div>
         </div>
     </section>
@@ -721,6 +729,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./resources/scripts/index.js"></script>
     <script src="./resources/scripts/carousel.js"></script>
+    <script src="./resources/scripts/form.js"></script>
     <script src="https://kit.fontawesome.com/5e83a2806e.js" crossorigin="anonymous"></script>
 </body>
 
