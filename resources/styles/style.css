@@ -134,12 +134,14 @@ header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-list a {
 header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-list .dropdown {
   margin-left: 1rem;
 }
-header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource {
+header .hero .head-box .navbar .nav-left .nav-menu-list .dropdown {
   display: flex;
   justify-content: center;
   position: absolute;
+  background: none;
+  border: none;
 }
-header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .res-link a {
+header .hero .head-box .navbar .nav-left .nav-menu-list .dropdown .res-link a {
   color: #FFF;
   font-size: 1.6rem;
   font-size: none;
@@ -148,12 +150,11 @@ header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .res-li
   font-family: "Inter", sans-serif;
   margin-left: 4rem;
 }
-header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .dropdown {
-  background: none;
-  border: none;
-  margin-left: 0.8rem;
+header .hero .head-box .navbar .nav-left .nav-menu-list .dropdown .down {
+  padding-left: 0.8rem;
+  margin-top: 0.3rem;
 }
-header .hero .head-box .navbar .nav-left .nav-menu-list .navbar-resource .dropdown i {
+header .hero .head-box .navbar .nav-left .nav-menu-list .dropdown .down i {
   color: #FFF;
   font-size: 1.6rem;
 }
@@ -419,6 +420,23 @@ header .content .btn i {
 }
 .features-campaigns .container .row .campaigns-card .card-text .link a:hover {
   color: #68a1d6;
+}
+.features-campaigns .open-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0rem;
+}
+.features-campaigns .open-data .data-para p {
+  padding: 1rem 7rem;
+  text-align: start;
+}
+.features-campaigns .open-data .data-image {
+  margin-right: -10rem;
+  margin-top: 2rem;
+}
+.features-campaigns .open-data .data-image img {
+  position: relative;
+  width: 80%;
 }
 
 .features-profiles .row {
@@ -991,7 +1009,7 @@ header .content .btn i {
 }
 .contact-us .wrapper .contact-form form .error {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   color: red;
 }
 .contact-us .wrapper .contact-form form #email-error,

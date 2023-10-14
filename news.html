@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="YIPL Frontend Challenge">
+    <meta name="keywords" content="HTML, SCSS, JavaScript">
+    <meta name="author" content="Raj Kumar Maharjan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <!-- favicon-link -->
+    <link rel="icon" type="image/x-icon" href="./resources/public/Image/favicon.ico">
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./resources//styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero-bg">
+            <img src="./resources/public/Image/Hero-bg.jpeg" alt="header-bg">
+        </div>
+
+        <div class="hero">
+            <div class="head-box">
+                <div class="container">
+                    <nav class="navbar">
+                        <div class="nav-left">
+                            <div class="main-logo">
+                                <a href="index.html">
+                                    <img src="./resources/public/Image/main-logo.png" alt="top-logo" class="logo">
+                                </a>
+                            </div>
+                            <div class="nav-menu-list">
+                                <div class="navbar-menu" id="navbar-menu">
+                                    <ul class="navbar-list">
+                                        <li class="navbar-link">
+                                            <a href="index.html" target="_self">Home</a>
+                                        </li>
+                                        <li class="navbar-link">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="navbar-link">
+                                            <a href="#">Case Studies</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <Button onclick="dropdown()" class="dropdown" id="dropdown-arrow">
+                                    <div class="res-link">
+                                        <a href="#">
+                                            Resources
+                                        </a>
+                                    </div>
+                                    <div class="down">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="nav-right">
+                            <div class="searchbtn">
+                                <button onclick="toggleInput()" class="search" id="search">
+                                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="search-box-position">
+                <div class="search-bar">
+                    <div class="search-box" id="search-box">
+                        <div class="search-input" id="search-input">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" name="search" placeholder="search">
+                            <button onclick="toggleInput()" class="close-btn" id="closed-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul class="dropdown-list">
+                    <li class="dropdown-link">
+                        <i class="fa-solid fa-book"></i>
+                        <a href="#">
+                            <h4>Blog</h4>
+                            <p>The latest industry news, updates and info.</p>
+                        </a>
+                    </li>
+                    <li class="dropdown-link">
+                        <i class="fa-solid fa-bolt"></i>
+                        <a href="#">
+                            <h4>Customer stories</h4>
+                            <p>Learn how our customers are making big changes.</p>
+                        </a>
+                    </li>
+                    <li class="dropdown-link">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <a href="#">
+                            <h4>Video tutorials</h4>
+                            <p>Get up and running on new features and techniques.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <h1>
+                        News 
+                    </h1>
+                    <p class="heading-text">
+                        We aim stop public funds siphoning off and we have a plan that will help. We are working at the
+                        national and EU levels to advance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="scroll-to-top">
+        <div class="scroll">
+            <div class="scroll-Top">
+                <button class="btn" id="ScrollToTop">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <section class="features-campaigns">
+        <div class="container">
+            <div class="campaigns">
+                <h1>
+                    Statement from the Catalogue Coalition
+                </h1>
+                <div class="open-data">
+                    <div class="data-para">
+                        <p>
+                            As of my last knowledge update in September 2021, there isn't a widely recognized or
+                            specific entity known as the "Catalogue Coalition." It's possible that this is a relatively
+                            new or niche organization or group, and I do not have any information about statements or
+                            actions from such a coalition in my existing data.
+                        </p>
+                    </div>
+                    <div class="data-image">
+                        <img src="./resources/public/Image/news-4.jpeg" alt="news">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+        <div class="wrapper">
+            <div class="contatent">
+                <h3>Contact Us</h3>
+                <div class="para-text">
+                    <p>
+                        If you have any further inquires, please let us know by filling the form below
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form">
+
+                <form action="#" onsubmit="return validation()">
+                    <div class="form-group">
+                        <div class="name">
+                            <div class="first-name">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" class="fname" id="fname">
+                                <span id="fnameError" class="error"></span>
+                            </div>
+                            <div class="last-name">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" class="lname" id="lname">
+                                <span id="lnameError" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" class="email-id" id="email">
+                            <span id="email-error" class="error"></span>
+                        </div>
+                        <div class="message">
+                            <label for="textarea">Message</label>
+                            <textarea name="message" cols="30" rows="7" class="text" id="message"></textarea>
+                            <span id="message-error" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-group">
+            <div class="bg-img">
+                <img src="./resources/public/Image/footer-bg.png" alt="footer-bg">
+            </div>
+            <div class="overlay">
+                <div class="overlay-1"></div>
+                <div class="overlay-2"></div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-content ">
+                    <div class="footer-left">
+                        <div class="logo">
+                            <img src="./resources/public/Image/footer-logo/Logomark.png" alt="Logomark"
+                                class="logomark">
+                            <img src="./resources/public/Image/footer-logo/Logotype.png" alt="Logotype"
+                                class="logotype">
+                        </div>
+                        <div class="para-text">
+                            <p>
+                                We are a collaboration of non-government organisation and professionals working to
+                                ensure that government spending.
+                            </p>
+                        </div>
+                        <div class="social-media">
+
+                            <a href="#" target="_blank" class="twitter-icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="In-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="youtube-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-list">
+                            <div class="list">
+                                <div class="link-head">
+                                    <h5>Links</h5>
+                                </div>
+                                <div class="links-list">
+                                    <ul class="list-group">
+                                        <li>
+                                            <a href="#">
+                                                Campaigns
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Resources
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                News
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                About Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="Resources-head">
+                                    <h5>Resources</h5>
+                                </div>
+                                <div class="links-list">
+                                    <ul class="list-group">
+                                        <li>
+                                            <a href="#">
+                                                Transparency Toolkit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Evidence
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Best Practices
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="work-head">
+                                    <h5>Work with us</h5>
+                                </div>
+                                <div class="links-list">
+                                    <ul class="list-group">
+                                        <li>
+                                            <a href="#">
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Join Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-warpper">
+                <div class="terms">
+                    <p>
+                        Terms and conditions
+                    </p>
+                </div>
+                <div class="copyright-right">
+                    <div class="cc-logo">
+                        <img src="./resources/public/Image/cc-logo.png" alt="copyright-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./resources/scripts/index.js"></script>
+    <script src="./resources/scripts/carousel.js"></script>
+    <script src="./resources/scripts/form.js"></script>
+    <script src="./resources/scripts/button.js"></script>
+    <script src="https://kit.fontawesome.com/5e83a2806e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

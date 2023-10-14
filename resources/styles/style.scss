@@ -81,10 +81,12 @@ header {
               }
             }
 
-            .navbar-resource {
+            .dropdown {
               display: flex;
               justify-content: center;
               position: absolute;
+              background: none;
+              border: none ;
               .res-link {
                 a {
                   color: $white;
@@ -96,11 +98,9 @@ header {
                   margin-left: 4rem;
                 }
               }
-              .dropdown {
-                background: none;
-                border: none;
-                margin-left: 0.8rem;
-
+              .down {
+                padding-left:0.8rem;
+                margin-top: .3rem;
                 i {
                   color: $white;
                   font-size: 1.6rem;
@@ -410,6 +410,26 @@ header {
       }
     }
   }
+  .open-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0rem;
+    .data-para{
+     p{
+      padding: 1rem 7rem;
+      text-align: start;
+     }
+    }
+    .data-image{
+      margin-right: -10rem;
+      margin-top: 2rem;
+      img{
+        position: relative;
+        width: 80%;
+      }
+    }
+  }
+  
 }
 .features-profiles {
   .row {
@@ -1007,7 +1027,7 @@ header {
         }
         .error{
           font-size: 1.6rem;
-          font-weight: 700;
+          font-weight: 400;
           color: red;
 
         }
