@@ -16,3 +16,12 @@ document.addEventListener('DOMContentLoaded', function(){
         resourceSection.scrollIntoView({behavior: 'smooth'});
     });
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const scrollToCResourceButton = document.getElementById('scrollToFooter');
+    const resourceSection = document.getElementById('footer');
+
+    scrollToCResourceButton.addEventListener('click', function(){
+        resourceSection.scrollIntoView({behavior: 'smooth'});
+    });
+});
